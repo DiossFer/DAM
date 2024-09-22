@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+    <head>
+
+        <title>Practicas Pagina THEGEM</title>
+
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="author" content="Fernando Ortega Castro">
+        <meta name="title" content="Practicas Pagina THEGEM"/>
+        <meta name="description" content="Pagina web que simula una pagina de THEGEM realizada como practicas de la asignatura de Lenguajes de Marcas"/>
+        <meta charset="UTF-8">
+        
+
+        <style>
+
+            @font-face{
+                font-family: Montserrat;
+                src:url(./Fuentes/Montserrat-VariableFont_wght.ttf);
+            }
+            @font-face{
+                font-family: Montserrat_Ultra_Light;
+                src:url(./Fuentes/Montserrat_Ultra_Light/Montserrat_Ultra_Light.otf);
+            }
+            @font-face{
+                font-family: PermanentMarker;
+                src:url(./Fuentes/PermanentMarker-Regular.ttf);
+            }
+            @font-face{
+                font-family: SourceSansPro;
+                src:url(./Fuentes/SSP/SourceSansPro-Regular.ttf);
+            }
+
+            /**********************************************************      Inicializacion      ********************************************************************************************/
+
+            body{
+                font-family: Montserrat;
+                font-size: 100%;
+                margin: 0;
+                padding: 0;
+                background-color: rgb(33, 35, 49);
+                box-sizing: border-box;
+                
+
+            
+            }
+
+            *{
+                flex-wrap: wrap;
+            }
+
+            /****************************************************************     Generales      ******************************************************************************************/
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            .stik{
+                position: sticky;
+                top: 0;
+            }
+
+            .flex{
+                display: flex;
+            }
+
+            .NoNegrita{
+                
+                font-weight: normal;
+                
+            }
+            .Negrita{
+                
+                font-weight: bold;
+                
+            }
+            h2{
+                margin: 0;
+                color: white;
+            }
+
+            .blue{
+                color: rgb(0, 188, 212);
+            }
+
+            .padIzq_col2{
+                padding-left: 16.66%;
+            }
+            h3{
+                margin: 0.5rem;
+                color: white;
+            }
+            p{
+                color: #B1BAC2;
+            }
+
+            .mAuto{
+                margin: auto;
+            }
+
+            .amarillo{
+                color:rgb(202, 225, 130);
+            }
+            .rojo{
+                color: rgb(248, 87, 75);
+            }
+            .azul{
+                color: rgb(0, 188, 212);
+            }
+
+            .morado{
+                color: rgb(154, 119, 215);
+            }
+            h4{
+                color: rgb(35, 37, 52);
+            }
+            /*****************************************************************      Barra de navegacion con menu       *****************************************************************************************/
+
+            nav{
+                padding-top: 0.2%;
+                padding-bottom: 0.2%;
+            }
+
+            .boton{
+                margin-left: 85%;
+                padding-top: 1.3%; 
+                padding-bottom: 1.3%;
+            }
+
+            #menu, .flip {
+                
+                text-align: center;
+                color: white;
+
+            }
+
+            #menu {
+                display: none;
+                position: fixed;
+
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background-color: rgb(34, 36, 49, 0.94);
+                
+            }
+             
+            .logo{
+                padding-top: 0.8%; 
+                padding-bottom: 0.8%;
+            }
+
+            #nav2{
+                background-color: rgba(243, 244, 245, 1);
+                
+            }
+
+            #nav1{
+                background-color: rgba(243, 244, 245, 1);
+            }
+
+            .logo2{
+                left: 0;
+                position: absolute;
+                padding-top: 0.8%; 
+                padding-bottom: 0.8%;
+            }
+
+            #img1{
+                display:inline;
+            }
+
+            .M{
+                margin-top: 10%;
+                font-family: Montserrat; 
+                color: white; 
+                font-size: 1.4rem;
+            }
+            .M h2 {
+                margin-bottom: 1%;
+            }
+
+            .M h2:hover{
+                color: rgb(0, 188, 212);
+            }
+            
+            /****************************************************************      Primera parte, portada       *****************************************************************************************/
+
+            .textoPostTitulo{
+                padding-top: 1%;
+                color: white;
+            }
+
+            .t1{
+                font-family: Montserrat_Ultra_Light; 
+                color: white; 
+                font-size: 3.9rem;
+            }
+
+            .t2{
+                font-family: Montserrat; 
+                color: white; 
+                font-size: 3.9rem;
+            }
+
+            .t3{
+                font-family: PermanentMarker; 
+                color: rgb(0, 188, 212); 
+                font-size: 3.9rem;
+            }
+            .raya_titulo{
+                width: 10%; 
+                border-color: rgb(0, 188, 212); 
+                margin-right: 90%;
+            }
+
+            .titulo{
+                padding-top: 12%;
+                padding-left: 21%;
+            }
+
+            header{
+
+                background-image: url(https://codex-themes.com/thegem/sites/agency-digital/wp-content/uploads/revslider/agency-sparta-animated/3-25_mini_mini2.jpg);
+                background-repeat: no-repeat;
+                background-size:100%;
+                min-height: 58rem;
+                width: 100%;
+                left: 0;
+                right: 0;
+
+            }
+
+            .RM{
+                background-color: rgb(2, 1, 1);
+                line-height: 14px;
+                font-weight: 700;
+                padding-right: 1.7rem;
+                padding-left: 1.7rem;
+                padding-top: 0.8rem;
+                padding-bottom: 0.8rem;
+                border-radius: 30px;
+                color: white;
+                text-align: center;
+                margin-top: 4%;
+                display: block;
+                width: max-content;
+            }
+
+            .RM:hover{
+                background-color: rgb(255, 255, 255);
+                color: black;
+                
+            }
+
+            /*********************************************************        Segunda parte, about us       *******************************************************************************************/
+
+            #aboutUS{
+                background-image: url(./images/ab.webp);
+                
+                background-repeat: no-repeat;
+                
+            }
+            
+            .AUS{
+                font-family: Montserrat; 
+                color: white; 
+                font-size: 3rem;
+                padding-top: 2rem;
+                padding-bottom: 4.5rem;
+                text-align: center;
+            }
+
+            .WAC{
+                font-family: Montserrat_Ultra_Light; 
+                color: white; 
+                font-size: 2.5rem;
+            }
+
+            .raya{
+                padding-top: 1.6rem;
+                
+            }
+
+            .raya hr{
+                border-color: rgb(0, 188, 212); 
+            }
+
+            #aboutUS img{
+                padding-bottom: 3.5rem;
+            }
+
+            /*************************************************************      Tercera parte, 3 columnas        ************************************************************************************/
+
+            .c1{
+                padding-top: 5rem;
+                background-image: url(images/F1C1.jpg);
+                
+                background-repeat: no-repeat;
+            }
+
+            .c2{
+                padding-top: 5rem;
+                background-image: url(images/F1C2.jpg);
+                
+                background-repeat: no-repeat;
+            }
+            .c3{
+                padding-top: 5rem;
+                background-image: url(images/F1C3.jpg);
+                
+                background-repeat: no-repeat;
+            }
+
+            .cUP{
+                min-height: 25rem; 
+                text-align: center;
+            }
+
+            .cUP p{
+                font-size: 1.4rem;
+            }
+
+            .cUP h3{
+                color: white;
+                font-size: 1.7rem;
+            }
+
+            /*****************************************************************     Cuarta parte, Our Skills       ********************************************************************************/
+
+            #OurSkills{
+                background-image: url(images/boruskill.webp);
+                
+                background-repeat: no-repeat;
+                text-align: center;
+            }
+
+            #OurSkills h2{
+                padding-top: 5rem;
+                font-size: 3rem;
+            }
+
+            #OurSkills hr{
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+            }
+
+            #OurSkills p{
+                padding-bottom: 7rem;
+                font-size: 1.1rem;
+            }
+
+            #OurSkills img{
+                padding-bottom: 3.5rem;
+                
+            }
+            
+            #OurSkills h3{
+                font-size: 16px;
+                margin: 0;
+                
+            }
+
+            #OurSkills .flex {
+                padding-bottom: 4rem;
+                margin-left: 25%;
+            }
+
+            #OurSkills .flex h3{
+                margin-top: 1rem;
+                padding-bottom: 1rem;
+            }
+
+            /**************************************************************        Quienta parte, Our Works       **************************************************************************************/
+
+            #OurWorks{
+                background-image: url(images/montana.jpg);
+                background-repeat: no-repeat;
+                text-align: center;
+            }
+
+            #OurWorks h2{
+                padding-top: 5rem;
+                font-size: 3rem;
+            }
+
+            #OurWorks hr{
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+            }
+
+            #OurWorks p{
+                padding-bottom: 7rem;
+                font-size: 1.1rem;
+            }
+
+            .imgsH{
+                min-height: 20rem;
+            }
+
+            .imgH1{
+                background-image: url(./images/tablet.jpg);
+                
+                background-repeat: no-repeat;   
+                 
+            }
+
+            .imgH2{
+                background-image: url(./images/tarjet.jpg);
+                
+                background-repeat: no-repeat;    
+                    
+            }
+
+            .imgH3{
+                background-image: url(./images/bolsa.jpg);
+                
+                background-repeat: no-repeat;       
+            }
+
+            .imgH4{
+                background-image: url(./images/bolsa2.jpg);
+                
+                background-repeat: no-repeat;    
+                 
+            }
+
+            .ocult{
+                display: none;
+                color: white;
+                height: 100%;
+                width: 100%;
+                
+            }
+
+            .imgH1:hover .ocult{
+                display: block;
+                background-color: rgba(0, 188, 212, 0.8);
+            }
+
+            .imgH2:hover .ocult{
+                display: block;
+                background-color: rgba(0, 188, 212, 0.8);
+            }
+
+            .imgH3:hover .ocult{
+                display: block;
+                background-color: rgba(0, 188, 212, 0.8);
+            }
+            .imgH4:hover .ocult{
+                display: block;
+                background-color: rgba(0, 188, 212, 0.8);
+            }
+
+            .IWTS{
+                border-radius: 40px;
+                color: rgb(0, 188, 212);
+                border-color: rgb(0, 188, 212);
+                border-style: solid;
+
+                padding-right: 0.6rem;
+                padding-left: 0.6rem;
+                padding-top: 1.6rem;
+                padding-bottom: 1.6rem;
+                
+                text-align: center;
+                display: block;
+                margin: auto;
+
+                margin-top: 4rem;
+                font-size: 1.3rem;
+                
+            }
+
+            .IWTS:hover{
+                color: rgb(255, 255, 255);
+                background-color: rgb(0, 188, 212);
+            }
+
+            .abajo{
+                padding-bottom: 4rem;
+            }
+
+            /******************************************************************       Sexta parte, WHY CHOOSE US        ************************************************************************************/
+
+            #WCU{
+                background-image: url(images/bmt.jpg);
+                
+                background-repeat: no-repeat;
+                text-align: center;
+            }
+
+            #WCU h2{
+                padding-top: 5rem;
+                font-size: 3rem;
+                color: rgb(35, 37, 52);
+            }
+
+            #WCU hr{
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+            }
+
+            #WCU p{
+                padding-bottom: 5rem;
+                font-size: 1.1rem;
+            }
+
+            #WCU .WCU{
+                
+                font-family: SourceSansPro;
+                padding-bottom: 6rem;
+                text-align: left;
+            }
+
+            #WCU a{
+                padding: 1.5%; 
+                padding-bottom: 2%; 
+                padding-top: 2%; 
+                line-height: 150%; 
+                color: rgb(95, 114, 127);
+            }
+
+            #WCU a:hover{
+                background-color: rgba(255, 255, 255, 0.9);
+            } 
+
+            #WCU a:hover h4{
+                color: rgb(0, 188, 212);
+            }
+
+            .ad1{
+                width: 66.66%;
+                
+            }
+
+            .ad2{
+                padding-left: 6%; padding-top: 11%;
+                
+            }
+
+            .WCU .flex{
+                padding-left: 21%;
+                padding-bottom: 1.8rem;
+            }
+
+            /**********************************************************************      Setima parte, OUR PROCESS       ******************************************************************************/
+
+            #OURP{
+                background-image: url(./images/pc3.jpg);
+                
+                background-repeat: no-repeat;
+                text-align: center;
+            }
+
+            #OURP h2{
+                padding-top: 5rem;
+                font-size: 3rem;
+            }
+
+            #OURP hr{
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+                border-color: #B1BAC2;
+            }
+
+            #OURP p{
+                padding-bottom: 7rem;
+                font-size: 1.1rem;
+            }
+
+            #OURP .flex p{
+                line-height: 130%; 
+                font-size: 0.9rem;
+            }
+
+            #OURP .flex{
+                text-align: left;
+                padding-bottom: 4rem;
+            }
+
+            .d1OURP {
+                background-image: url(./images/01.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                padding: 2.5rem;
+                margin: 0;
+                color: #00BCD4;
+            }
+    
+            #OURP .hr1 {
+                margin: 0; 
+                border-color: #00BCD4;
+            }
+
+            .d2OURP {
+                background-image: url(./images/02.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                padding: 2.5rem;
+                margin: 0;
+                color: #A3E7F0;
+            }
+    
+            #OURP .hr2 {
+                margin: 0; 
+                border-color: #A3E7F0;
+            }
+
+            .d3OURP {
+                background-image: url(./images/03.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                padding: 2.5rem;
+                margin: 0;
+                color: white;
+            }
+    
+            #OURP .hr3 {
+                margin: 0; 
+                border-color: white;
+            }
+
+            .d2d2esp{
+                margin-right: 2%;
+            }
+
+            .d1d1mar{
+                margin-left: 20%; 
+                margin-right: 2%;
+            }
+            
+            /*******************************************************************          Octava parte, CUSTOMERS ABOUT US        ***********************************************************************************/
+
+            #CAU{
+                background-image: url(./images/fondo.png);
+                background-repeat: no-repeat;
+                text-align: center;
+            }
+
+            #CAU h2{
+                padding-top: 5rem;
+                font-size: 3rem;
+                color: rgb(35, 37, 52);
+            }
+
+            #CAU hr{
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+            }
+
+            #CAU p{
+                padding-bottom: 5rem;
+                font-size: 1.1rem;
+            }
+
+            .comentario{
+                background-image: url(./images/marco.png);
+                background-repeat: no-repeat;
+                text-align: center;
+                margin-left: 20%;                
+            }
+
+            .comentario img {
+                border-radius: 50%;
+                width: 50%;
+                margin-top: 20%;
+            }
+
+            .txtoment{
+                padding-top: 4rem;
+                padding-bottom: 9rem;
+                text-align: left;
+            }
+
+            .comentd2{
+                color: #B1BAC2;
+                font-size: 0.8rem;
+            }
+
+            .comentd3{
+                padding-top: 3%;
+                font-size: 1.1rem;
+                color: #4c4e50;
+            }
+
+            .f2CAU{
+                padding-bottom: 5rem;
+            }
+
+            #CAU .flex a{
+                max-width: 12%;
+                max-height: 12rem;
+            }
+
+            #CAU .flex a img{
+                max-height: 12rem;
+                
+            }
+
+            .primerima{
+                margin-left: 24rem;
+            }
+
+            /************************************************************            Novena parte, OUR CORE MINDS      *********************************************************************************/
+
+            #OURCM{
+                background-image: url(./images/montana2.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            #OURCM h2{
+                padding-top: 5rem;
+                font-size: 3rem;
+                color: white;
+                text-align: center;
+            }
+
+            #OURCM hr{
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+                border-color: #B1BAC2;
+            }
+
+            #OURCM p{
+                padding-bottom: 7rem;
+                font-size: 1.1rem;
+                text-align: center;
+            }
+
+            .persona{
+                text-align: left;
+                padding-left: 2rem;
+
+                border-radius: 1px;
+                border-color: gray;
+
+                border-bottom-color: rgb(0, 188, 212);
+                border-bottom-width: 0.4rem;
+                border-style: solid;
+
+                margin-right: 3rem;
+            }
+
+            .imgperson {
+                border-radius: 50%;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                max-height: 9rem;
+            }
+
+            .persona:hover{
+                background-color: rgb(54, 54, 71);
+            }
+
+            .Pnombre{
+                font-size: 1.5rem;
+                color: white;
+                padding-bottom: 2rem;
+                font-style: Montserrat_Ultra_Light;
+            }
+
+            .Ppuesto{
+                font-size: 0.9rem;
+                color: #B1BAC2;
+                padding-bottom: 0.9rem;
+            }
+
+            .Pnumero{
+                font-size: 1.5rem;
+                color: rgb(0, 188, 212);
+                padding-bottom: 1.2rem;
+            }
+
+            .persona .flex{
+                padding-bottom: 2.8rem;
+            }
+
+            .primerPerso{
+                margin-left: 15%;
+            }
+
+            .carta{
+                padding-left: 38%;
+            }
+
+            .WWUS{
+                border-radius: 40px;
+                color: rgb(0, 188, 212);
+                border-color: rgb(0, 188, 212);
+                border-style: solid;
+
+                padding-right: 0.6rem;
+                padding-left: 0.6rem;
+                padding-top: 1.6rem;
+                padding-bottom: 1.6rem;
+                
+                text-align: center;
+                display: block;
+                margin: auto;
+
+                margin-top: 4rem;
+                font-size: 1.3rem;
+                
+                
+            }
+
+            .WWUS:hover{
+                color: rgb(255, 255, 255);
+                background-color: rgb(0, 188, 212);
+            }
+
+            /***********************************************************       Decima parte, subscripcion      **********************************************************************************/
+
+            .SUBsub{
+                margin-left: 6%;
+                
+                margin-bottom: 5%;
+                
+            }
+
+            .sub{
+                padding: 0.6rem;
+                width: 10rem;
+                margin-top: 7rem;
+                margin-left: 3rem;
+                background-color: rgb(33, 35, 49);
+                color: white;
+            }
+
+            .email{
+                margin-top: 18%;
+
+                
+            }
+
+            .subText1{
+                color: white;
+                padding-top: 1rem;
+            }
+
+            .subText2{
+                color: #B1BAC2;
+                padding-top: 0.5rem;
+                padding-bottom: 3rem;
+            }
+
+            #SUB:first-child{
+                margin-left: 20px;
+            }
+
+            #SUB textarea{
+                width: 40rem;
+            }
+
+            .textsub{
+                padding-top: 3%;
+                padding-left: 8%;
+            }
+
+            #SUB h3{
+                font-size: 1.8rem;
+            }
+
+            #SUB{
+                background-color: rgb(0, 188, 212);
+            }
+
+            .flex .SUBsub textarea{
+                display: table;
+            } 
+
+            /************************************************************        Undecima parte, CONTACT US        ***********************************************************************************************/
+
+            #CONTACTUS{
+                background-image: url(./images/edificios.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                text-align: center;
+            }
+
+            #CONTACTUS h2{
+                padding-top: 5rem;
+                font-size: 3rem;
+                color: white;
+                text-align: center;
+                margin-bottom: 5rem;
+            }
+            
+            #CONTACTUS h3{
+
+                color: white;
+                text-align: center;
+
+                font-family: Montserrat_Ultra_Light;
+                font-weight: normal;
+                font-size: 1.2rem;
+
+                padding-bottom: 1.5rem;
+                padding-top: 1.5rem;
+            }
+
+            #CONTACTUS p{
+                margin: 0;
+            }
+
+            #CONTACTUS .flex div div{
+                color: #B1BAC2;
+            }
+
+            .primermargen{
+                margin-left: 16%;
+            }
+
+            #CONTACTUS .flex{
+                margin-top: 6rem;
+            }
+            
+            #CONTACTUS .flex textarea{
+                display: table;
+                background-color: rgb(24, 24, 40);
+                margin-right: 8.33%;
+                border-style: none;
+                height: 2.2rem;
+            }
+
+            .primertextA{
+                margin-left: 16.66%;
+            }
+
+            .textAH{
+                min-height: 12rem;
+                margin-left: 0.4%;
+                margin-top: 1.6rem;
+                background-color: rgb(24, 24, 40);
+                border-style: none;
+                margin-bottom: 1.6rem;
+            }
+
+            #CONTACTUS textarea{
+                color: #B1BAC2;
+            }
+
+            .submit{
+                border-radius: 7px;
+                background-color: rgb(0, 188, 212);
+                border-style: none;
+
+                padding-top: 0.7rem;
+                padding-bottom: 0.7rem;
+                
+                text-align: center;
+                display: block;
+                margin: auto;
+
+                margin-top: 0.5rem;
+                font-size: 1.2rem;
+                
+            }
+
+            .submit:hover{
+                background-color: rgb(95, 114, 127);
+                
+                
+            }
+
+            /***********************************************************         Footer        **************************************************************************************/
+
+            footer{
+                margin-top: 5rem;
+                margin-bottom: 4rem;
+                margin-left: 18%;
+                background-color: rgb(33, 35, 49);
+                line-height: 1.6;
+            }
+
+            footer hr{
+                border-color: #B1BAC2;
+            }
+
+            footer h3{
+                padding-bottom: 2rem;
+            }
+
+            footer div img{
+                max-height: 4rem;
+                padding-bottom: 2rem;
+            }
+
+            .REPO{
+                margin-bottom: 1rem;
+                margin-left: 2rem;
+            }
+
+            .REPO img{
+                padding: 0;
+                border-radius: 50%;
+                margin-right: 3rem;
+                
+            }
+
+            .txt1{
+                color:#B1BAC2;
+                font-size: 0.9rem;
+            }
+
+            .txt2{
+                color:#00BCD4;
+                font-size: 0.8rem;
+            }
+
+            footer textarea{
+                width: 97%;
+                background-color: rgb(24, 24, 40);
+                color: #B1BAC2;
+                display: table;
+                margin-bottom: 1.2rem;
+            }
+
+            .send{
+                
+                background-color: rgb(57, 64, 80);
+                width: 100%;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+
+            }
+
+            .send:hover{
+                
+                background-color: rgb(95, 114, 127);
+                
+            }
+
+            .men{
+                height: 5rem;
+                display: block;
+            }
+
+            .margen{
+                margin-left: 1.5rem;
+            }
+
+            .LastP img{
+                padding: 0;
+                padding-right: 0.2rem;
+                padding-bottom: 0.2rem;
+            }
+
+            /****************************************************************         Ultimo Div                *******************************************************************************/
+
+            #lastDIIV{
+                background-color: rgb(24, 24, 40);
+                color: #B1BAC2;
+                font-size: 0.9rem;
+            }
+
+            #lastDIIV a{
+                color:#00BCD4;
+            }
+
+            #lastDIIV .enlaces a{
+                color: #B1BAC2;
+            }
+
+            #lastDIIV .enlaces a:hover{
+                color: #00BCD4;
+            }
+
+            .rayavertical{
+                padding: 0;
+                padding-left: 1.2rem;
+                padding-right: 1.2rem;
+            }
+        
+            .enlaces{
+                margin-right: 7rem;
+                margin-left: 7rem;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+
+            .copy{
+                padding-top: 3rem;
+                margin-left: 20%;
+            }
+
+            .redes_sociales{
+                padding-top: 3rem;
+            }
+
+            /***************************************************************          Responsive           *************************************************************************************/
+
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+            
+            @media only screen and (min-width: 600px) {
+                /* For tablets: */
+                .col-s-1 {width: 8.33%;}
+                .col-s-2 {width: 16.66%;}
+                .col-s-3 {width: 25%;}
+                .col-s-4 {width: 33.33%;}
+                .col-s-5 {width: 41.66%;}
+                .col-s-6 {width: 50%;}
+                .col-s-7 {width: 58.33%;}
+                .col-s-8 {width: 66.66%;}
+                .col-s-9 {width: 75%;}
+                .col-s-10 {width: 83.33%;}
+                .col-s-11 {width: 91.66%;}
+                .col-s-12 {width: 100%;}
+                .col-s-special1{width: 17%;}
+                .col-s-special3{
+                    width: 20%;
+                }
+            }
+
+
+            /* For mobile phones: */
+            @media only screen and (max-width: 768px) {
+                .titulo{
+                    padding-left: 0;
+                }
+                .RM{
+                    padding-left: 0;
+                    padding-right: 0;
+                    width: 100%;
+                }
+                header{
+                    min-height: 48rem;
+                }
+                .AUS{
+                padding-bottom: 2.5rem;
+                
+                }
+                .raya{
+                    padding: 0;
+                }
+                
+                #OurSkills .flex {
+                    margin-left: 0;
+                }
+                .boton{
+                    margin-left: 70%;
+                }
+                *{
+                    background-size: cover;
+                }
+                .d1d1mar{
+                    margin-left: 0; 
+
+                }
+                .col-special2{width: 75%}
+                #CAU .flex a{
+                    max-width: 100%;
+                }
+                .primerima{
+                margin-left: 0;
+                }
+                .comentario{
+                margin-left: 0; 
+                             
+                }
+                .txtoment{
+                    text-align: center;  
+                }
+                .segterPerso{
+                    margin-left: 15%;
+                    margin-top: 3rem;
+                }
+                #SUB textarea{
+                    width: 20rem;
+                }
+                .primertextA{
+                    margin: 0;
+                }
+                .primermargen{
+                    margin-left: 0;
+                }
+                .textAH{
+                    margin: 0;
+                    width: 91%;
+                    margin-right: 8%;
+                }
+                .rellenar{
+                    padding-left: 8%;
+                }
+                .margen{
+                    margin-left: 0;
+                }
+                footer{
+                    margin: 0;
+                    margin-top: 1.5rem;
+                    margin-bottom: 1.5rem;
+                }
+                .redes_sociales{
+                    padding-left: 20%;
+                    margin-bottom: 2rem;
+                }
+                .rayavertical{
+                    color: rgb(24, 24, 40);
+                }
+            }
+            
+            
+            @media only screen and (min-width: 768px) {
+                /* For desktop: */
+                .col-1 {width: 8.33%;}
+                .col-2 {width: 16.66%;}
+                .col-3 {width: 25%;}
+                .col-4 {width: 33.33%;}
+                .col-5 {width: 41.66%;}
+                .col-6 {width: 50%;}
+                .col-7 {width: 58.33%;}
+                .col-8 {width: 66.66%;}
+                .col-9 {width: 75%;}
+                .col-10 {width: 83.33%;}
+                .col-11 {width: 91.66%;}
+                .col-12 {width: 100%;}
+
+                .col-special1{width: 17%;}
+                *{
+                    background-size: cover;
+                }
+                .col-special3{
+                    width: 20%;
+                }
+            }
+
+        </style>
+
+    </head>
+
+
+
+    <body>
+
+        <nav class="stik" id="nav1">
+
+            <a href="#" title="Enlace en el logo a ningun sitio"><img alt="Logo de la empresa con enlace a la misma pagina" src="./images/logo.webp" class="logo"></a>
+            
+            <img alt="Imagen orientativa de tres lineas que abre un menu al presionar sobre ella" src="./images/boton.png" class="boton" class="flip" id="img1" onclick="myFunction()">
+
+        </nav>
+
+        <div id="menu">
+        
+            <nav id="nav2" class="stik">
+                
+                <a href="#" title="Enlace en el logo que no lleva a ningun sitio"><img alt="Logo de la empresa con enlace a la misma pagina" src="./images/logo2.webp" class="logo2"></a>
+                
+                <img alt="Imagen de una cruz que al presionar sobre ella se cierra el menu" src="./images/boton2.png" class="boton" class="flip" onclick="myFunction2()">
+
+            </nav>
+
+
+            <div class="M">
+
+                <a title="Enlace en el boton HOME del menu, a ningun sitio" href="#"><h2 class="blue">HOME</h2></a>
+                <a title="Enlace en el boton ABOUT US del menu, a ningun sitio" href="#"><h2>ABOUT US</h2></a>
+                <a title="Enlace en el boton SERVICES del menu, a ningun sitio" href="#"><h2>SERVICES</h2></a>
+                <a title="Enlace en el boton PORTFOLIO del menu, a ningun sitio" href="#"><h2>PORTFOLIO</h2></a>
+                <a title="Enlace en el boton OUR NEWS del menu, a ningun sitio" href="#"><h2>OUR NEWS</h2></a>
+                <a title="Enlace en el boton CONTACT del menu, a ningun sitio" href="#"><h2>CONTACT</h2></a>
+
+            </div>
+
+        </div>
+        
+
+
+
+
+        <header class="col-12 col-s-12">
+
+            <div class="titulo col-8 col-s-8">
+
+                <h2 class="t1 NoNegrita">WE'RE THEGEM</h2>
+                <h2 class="t2">A CREATIVE & DIGITAL</h2>
+                <div class="t3">AGENCY</div>
+
+                <div><hr class="raya_titulo"></div>
+
+                <p class="textoPostTitulo col-6 col-s-6">We help brands stand out from the crowd and succeed with our innovative ideas and top-notch services.</p>
+
+                <a title="Enlace en el boton Read more, a ningun sitio" href="#" class="RM">READ MORE</a>
+
+
+
+            </div>
+
+        </header>
+
+
+
+        <div id="aboutUS">
+
+            <h2 class="AUS">ABOUT US</h2>
+
+            <div class="flex">
+
+                <div class="raya padIzq_col2 col-1 col-s-1" >
+
+                    <hr class="col-10 col-s-10" />
+
+                </div>
+
+                <div class="col-4 col-s-4" >
+                    
+                    <div>
+
+                        <h3 class="WAC">WE ARE </h3>
+                        <h3 class="WAC">CREATIVE AGENCY</h3>
+                        <p class="col-10 col-s-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                    
+                    </div>
+
+                </div>
+
+                <div class="col-5 col-s-5">
+
+                    <img class="col-10 col-s-10" alt="Video (en realidad es una imagen) sobre la empresa" src="./images/Video.png">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cUP flex">
+
+            <div class="c1 col-4 col-s-4">
+
+                <div><img src="./images/Trofeo.png" alt="Imagen de un trofeo para decorarar"></div>
+                <div><h3>CREATIVE DESIGNS</h3></div>
+                <div><p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum</p></div>
+
+            </div>
+
+            <div class="c2 col-4 col-s-4">
+
+                <div><img src="./images/cuadros.png" alt="Imagen de un trofeo para decorarar"></div>
+                <div><h3>CODING & USABILITY</h3></div>
+                <div><p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum</p></div>
+
+            </div>
+            <div class="c3 col-4 col-s-4">
+
+                <div><img src="./images/pizarra.png" alt="Imagen de un trofeo para decorarar"></div>
+                <div><h3>BRAND CONSULTING</h3></div>
+                <div><p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum</p></div>
+
+            </div>
+
+        </div>
+
+        <div id="OurSkills">
+
+
+            <div>
+                <h2>OUR SKILLS</h2>
+            </div>
+
+
+            <div>
+                <hr class="col-1 col-s-1"/>
+            </div>
+
+
+            <div class="col-4 col-s-4 Negrita mAuto">
+                <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE</p>
+            </div>
+
+
+            <div>
+                <img class="col-7 col-s-7" src="./images/GRAFICA.webp" alt="Grafico de sus habilidades siendo Amarillo: USABILITY & DESIGN, Azul: PROGRAMMING, rojo: TESTING y morado: DATABASES"/>
+            </div>
+
+
+            <div class="flex">
+
+                <div class="col-2 col-s-2"><h3 class="amarillo">USABILITY & DESIGN </h3></div>
+                <div class="col-2 col-s-2"><h3 class="azul">PROGRAMMING </h3></div>
+                <div class="col-2 col-s-2"><h3 class="rojo">TESTING </h3></div>
+                <div class="col-2 col-s-2"><h3 class="morado">DATABASES</h3></div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div id="OurWorks">
+
+
+            <div>
+                <h2>OUR WORKS</h2>
+            </div>
+
+
+            <div>
+                <hr class="col-1 col-s-1"/>
+            </div>
+
+
+            <div class="col-4 col-s-4 Negrita mAuto">
+                <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE</p>
+            </div>
+
+            <div class="imgsH flex col-12 col-s-12">
+
+
+                <div class="imgH1 col-3 col-s-3">
+                    <div class="ocult">
+                        <div class="flex">
+                            <img src="./images/cinta.png" alt="icono cinta con enlace"><img src="./images/nota.png" alt="icono nota con enlace"><img src="./images/compartir.png" alt="icono compartir con enlace">
+                        </div>
+                        <hr/>
+                        <h3>APP DEVELOPMENT</h3>
+                    </div>
+                </div>
+
+
+                <div class="imgH2 col-3 col-s-3">
+                    <div class="ocult">
+                        <div class="flex">
+                            <img src="./images/nota.png" alt="icono cinta con enlace"><img src="./images/cadena.png" alt="icono nota con enlace"><img src="./images/compartir.png" alt="icono compartir con enlace">
+                        </div>
+                        <hr/>
+                        <h3>ARCHITECTURE PROJECT</h3>
+                    </div>
+                </div>
+
+
+                <div class="imgH3 col-3 col-s-3">
+                    <div class="ocult">
+                        <div class="flex">
+                            <img src="./images/nota.png" alt="icono cinta con enlace"><img src="./images/camara.png" alt="icono nota con enlace"><img src="./images/compartir.png" alt="icono compartir con enlace">
+                        </div>
+                        <hr/>
+                        <h3>BRANDING & COSULTING</h3>
+                    </div>
+                </div>
+
+
+                <div class="imgH4 col-3 col-s-3">
+                    <div class="ocult">
+                        <div class="flex">
+                            <img src="./images/nota.png" alt="icono cinta con enlace"><img src="./images/cinta.png" alt="icono nota con enlace"><img src="./images/compartir.png" alt="icono compartir con enlace">
+                        </div>
+                        <hr/>
+                        <h3>VILLA FOR RENT</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="abajo Negrita"><a title="Enlace en el boton I WANT THE SAME, a ningun sitio" href="#" class="col-2 col-s-2 col-special2 IWTS Negrita">I WANT THE SAME</a></div>
+
+
+
+        </div>
+
+
+
+        <div id="WCU" class="col-12 col-s-12" >
+
+
+
+            <div>
+                <h2>WHY CHOOSE US</h2>
+            </div>
+
+
+            <div>
+                <hr class="col-1 col-s-1"/>
+            </div>
+
+
+            <div class="col-4 col-s-4 Negrita mAuto">
+                <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE</p>
+            </div>
+
+
+            <div class="WCU col-12 col-s-12" >
+            
+                
+                <div class="flex">
+
+                    <a title="Enlace en MULTILINGUAL, a ningun sitio" href="#" class="cuadrad flex col-special1 col-s-special1">
+                        <div class="ad1">
+                            <div><h4>MULTILINGUAL</h4></div>
+                            <div>Lorem ipsum dolor sit ametcon sectur adipisicing elit, sed doiusmod tempor</div>
+                        </div>
+                        
+                        <div class="ad2"><img src="./images/pastilla.png" alt="Imagen de una pastilla"></div>
+                    </a>
+
+
+                    <a title="Enlace en WOOCOMMERCE, a ningun sitio" href="#" class="cuadrad flex col-special1 col-s-special1">
+                        <div class="ad1">
+                            <div><h4>WOOCOMMERCE</h4></div>
+                            <div>Lorem ipsum dolor sit ametcon sectur adipisicing elit, sed doiusmod tempor</div>
+                        </div>
+                        
+                        <div class="ad2"><img src="./images/dron.png" alt="Imagen de una pastilla"></div>
+                    </a>
+
+
+                    <a title="Enlace en POWERFUL, a ningun sitio" href="#" class="cuadrad flex col-special1 col-s-special1">
+                        <div class="ad1">
+                            <div><h4>POWERFUL</h4></div>
+                            <div>Lorem ipsum dolor sit ametcon sectur adipisicing elit, sed doiusmod tempor</div>
+                        </div>
+                        
+                        <div class="ad2"><img src="./images/seguridad.png" alt="Imagen de una pastilla"></div>
+                    </a>
+
+                    <a title="Enlace en FLEXIBLE, a ningun sitio" href="#" class="cuadrad flex col-special1 col-s-special1">
+                        <div class="ad1">
+                            <div><h4>FLEXIBLE</h4></div>
+                            <div>Lorem ipsum dolor sit ametcon sectur adipisicing elit, sed doiusmod tempor</div>
+                        </div>
+                        
+                        <div class="ad2"><img src="./images/regla.png" alt="Imagen de una pastilla"></div>
+                    </a>
+
+                </div>
+
+                <div class="flex">
+                    
+
+                    <a title="Enlace en FREE SUPPORT, a ningun sitio" href="#" class="cuadrad flex col-special1 col-s-special1">
+                        <div class="ad1">
+                            <div><h4>FREE SUPPORT</h4></div>
+                            <div>Lorem ipsum dolor sit ametcon sectur adipisicing elit, sed doiusmod tempor</div>
+                        </div>
+                        
+                        <div class="ad2"><img src="./images/termometro.png" alt="Imagen de una pastilla"></div>
+                    </a>
+
+
+                    <a title="Enlace en MIGHTY ADMIN, a ningun sitio" href="#" class="cuadrad flex col-special1 col-s-special1">
+                        <div class="ad1">
+                            <div><h4>MIGHTY ADMIN</h4></div>
+                            <div>Lorem ipsum dolor sit ametcon sectur adipisicing elit, sed doiusmod tempor</div>
+                        </div>
+                        
+                        <div class="ad2"><img src="./images/etiqueta.png" alt="Imagen de una pastilla"></div>
+                    </a>
+
+
+                    <a title="Enlace en PIXEL PERFECT, a ningun sitio" href="#" class="cuadrad flex col-special1 col-s-special1">
+                        <div class="ad1">
+                            <div><h4>PIXEL PERFECT</h4></div>
+                            <div>Lorem ipsum dolor sit ametcon sectur adipisicing elit, sed doiusmod tempor</div>
+                        </div>
+                        
+                        <div class="ad2"><img src="./images/puerto.png" alt="Imagen de una pastilla"></div>
+                    </a>
+
+                    <a title="Enlace en FAST LOADING, a ningun sitio" href="#" class="cuadrad flex col-special1 col-s-special1">
+                        <div class="ad1">
+                            <div><h4>FAST LOADING</h4></div>
+                            <div>Lorem ipsum dolor sit ametcon sectur adipisicing elit, sed doiusmod tempor</div>
+                        </div>
+                        
+                        <div class="ad2"><img src="./images/menbarmay.png" alt="Imagen de una pastilla"></div>
+                    </a>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+        
+        <div id="OURP">
+
+
+            <div>
+                <h2>OUR PROCESS</h2>
+            </div>
+
+
+            <div>
+                <hr class="col-1 col-s-1"/>
+            </div>
+
+
+            <div class="col-4 col-s-4 Negrita mAuto">
+                <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE</p>
+            </div>
+        
+
+            <div class="flex">
+                <div class="d1d1mar col-special3 col-s-special3"> 
+                    <div><h4 class="d1OURP">CLIENT INTERRACTION</h4></div>
+                    <hr class="hr1 col-2 col-s-2"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+                </div>
+
+                <div class="d2d2esp col-special3 col-s-special3"> 
+                    <div><h4 class="d2OURP">CLIENT INTERRACTION</h4></div>
+                    <hr class="hr2 col-2 col-s-2"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+                </div>
+
+
+
+                <div class="col-special3 col-s-special3"> 
+                    <div><h4 class="d3OURP">CLIENT INTERRACTION</h4></div>
+                    <hr class="hr3 col-2 col-s-2"/>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div id="CAU" class="col-12 col-s-12">
+
+
+
+
+
+
+
+
+            <div>
+                <h2>CUSTOMERS ABOUT US</h2>
+            </div>
+
+
+            <div>
+                <hr class="col-1 col-s-1"/>
+            </div>
+
+
+            <div class="col-4 col-s-4 Negrita mAuto">
+                <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE</p>
+            </div>
+
+
+
+
+            <div class="flex comentario col-7 col-s-7"> 
+
+                <div class="col-3 col-s-3">
+                    <img src="./images/tia.jpg" alt="imagen de la persona que ha introducido el comentario"/>
+                </div>
+
+                <div class="txtoment col-8 col-s-8">
+                    
+                    <div class="Negrita azul">JENIFFER BURNS</div>
+                    <div class="comentd2">Creative Heads Inc.</div>
+                    <div class="comentd3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</div>
+
+                </div>
+                
+            </div>
+
+
+
+            <div class=" f2CAU flex col-10 col-s-10">
+
+                <a title="Enlace en la imagen decorativa, a ningun sitio" href="#" class=" primerima col-2 col-s-2" ><img src="./images/ima1.webp" alt="Imagen decorativa "/></a>
+                <a title="Enlace en la imagen decorativa, a ningun sitio" href="#" class="col-2 col-s-2" ><img src="./images/ima2.webp" alt="Imagen decorativa "/></a>
+                <a title="Enlace en la imagen decorativa, a ningun sitio" href="#" class="col-2 col-s-2" ><img src="./images/ima3.webp" alt="Imagen decorativa "/></a>
+                <a title="Enlace en la imagen decorativa, a ningun sitio" href="#" class="col-2 col-s-2" ><img src="./images/ima4.webp" alt="Imagen decorativa "/></a>
+                <a title="Enlace en la imagen decorativa, a ningun sitio" href="#" class="col-2 col-s-2" ><img src="./images/ima5.webp" alt="Imagen decorativa "/></a>
+
+            </div>
+
+
+
+        </div>
+
+
+        <div id="OURCM">
+        
+
+            <div>
+                <h2>OUR CORE MINDS</h2>
+            </div>
+
+
+            <div>
+                <hr class="col-1 col-s-1"/>
+            </div>
+
+
+            <div class="col-4 col-s-4 Negrita mAuto">
+                <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE</p>
+            </div>
+
+
+            <div class="flex">
+                <div class="persona primerPerso col-special3 col-s-special3">
+                    <div><img class="imgperson" src="./images/persona1.jpg" alt="Imagen de la persona"/></div>
+                    <div class="Pnombre">Emerson Anderson</div>
+                    <div class="Ppuesto">Huma Resources</div>
+                    <div class="Pnumero Negrita">+1 (987) 1625346</div>
+                    <div class="flex"> 
+
+                        <a title="Enlace en la imagen de una red social, a ningun sitio" href="#"><img src="./images/f1.png" alt="Imagen de la red social (enlace)"/></a>
+                        <a title="Enlace en la imagen de una red social, a ningun sitio" href="#"><img src="./images/t1.png" alt="Imagen de la red social (enlace)"/></a>
+                        <a title="Enlace en la imagen de una red social, a ningun sitio" href="#"><img src="./images/in1.png" alt="Imagen de la red social (enlace)"/></a>
+                        <a title="Enlace en la imagen de una red social, a ningun sitio" href="#"><img src="./images/I1.png" alt="Imagen de la red social (enlace)"/></a>
+                        <a title="Enlace en la imagen de una red social, a ningun sitio" href="#"><img src="./images/S1.png" alt="Imagen de la red social (enlace)"/></a>
+
+                    
+                        <a title="Enlace en la imagen de una carta, a ningun sitio" class="carta" href="#"><img src="./images/carta.png" alt="Imagen del correo (enlace)"/></a>
+                    
+                    </div>
+
+                </div>
+                
+
+
+                <div class="persona segterPerso col-special3 col-s-special3">
+                    <div><img class="imgperson" src="./images/persona2.jpg" alt="Imagen de la persona"/></div>
+                    <div class="Pnombre">Gordon Edwards</div>
+                    <div class="Ppuesto">Chief Financial Officer</div>
+                    <div class="Pnumero Negrita">+1 (987) 1625346</div>
+                    <div class="flex"> 
+
+                        <a title="Enlace en la imagen de una red social, a ningun sitio" href="#"><img src="./images/f1.png" alt="Imagen de la red social (enlace)"/></a>
+                        <a title="Enlace en la imagen de una red social, a ningun sitio" href="#"><img src="./images/t1.png" alt="Imagen de la red social (enlace)"/></a>
+                        <a title="Enlace en la imagen de una red social, a ningun sitio" href="#"><img src="./images/in1.png" alt="Imagen de la red social (enlace)"/></a>
+                        <a title="Enlace en la imagen de una red social, a ningun sitio" href="#"><img src="./images/I1.png" alt="Imagen de la red social (enlace)"/></a>
+                        <a title="Enlace en la imagen de una red social, a ningun sitio" href="#"><img src="./images/S1.png" alt="Imagen de la red social (enlace)"/></a>
+
+                    
+                        <a title="Enlace en la imagen de una carta, a ningun sitio" class="carta" href="#"><img src="./images/carta.png" alt="Imagen del correo (enlace)"/></a>
+                    
+                    </div>
+
+                </div>
+
+
+                <div class="persona segterPerso col-special3 col-s-special3">
+                    <div><img class="imgperson" src="./images/persona3.jpg" alt="Imagen de la persona"/></div>
+                    <div class="Pnombre">Mel Brown</div>
+                    <div class="Ppuesto">Chief Executive Officer</div>
+                    <div class="Pnumero Negrita">+1 (987) 1625346</div>
+                    <div class="flex"> 
+
+                        <a title="Enlace en la imagen de una red social, a ningun sitio" href="#"><img src="./images/f1.png" alt="Imagen de la red social (enlace)"/></a>
+                        <a title="Enlace en la imagen de una red social, a ningun sitio" href="#"><img src="./images/t1.png" alt="Imagen de la red social (enlace)"/></a>
+                        <a title="Enlace en la imagen de una red social, a ningun sitio" href="#"><img src="./images/in1.png" alt="Imagen de la red social (enlace)"/></a>
+                        <a title="Enlace en la imagen de una red social, a ningun sitio" href="#"><img src="./images/I1.png" alt="Imagen de la red social (enlace)"/></a>
+                        <a title="Enlace en la imagen de una red social, a ningun sitio" href="#"><img src="./images/S1.png" alt="Imagen de la red social (enlace)"/></a>
+
+                    
+                        <a title="Enlace en la imagen de una carta, a ningun sitio" class="carta" href="#"><img src="./images/carta.png" alt="Imagen del correo (enlace)"/></a>
+                    
+                    </div>
+
+                </div>
+
+                
+            </div>
+            <div class="abajo">
+                <div class="WWUS Negrita col-2 col-s-2 col-special2 abajo"><a title="Enlace en el boton WORK WITH US, a ningun sitio" href="#">WORK WITH US</a></div>
+            </div>
+        </div>
+            
+            
+
+        <div id="SUB" class="flex">
+
+            <div class=" textsub col-3 col-s-3">
+                <div><h3>NEWSLETTER</h3></div>
+                <div class="subText1">Subscribe to our MailChimp newsletter and stay up to date with all events coming straight in your mailbox:</div>
+                <div class="subText2">* Personal data will be encrypted</div>
+            </div>
+            <div class="flex SUBsub">
+                <div>
+                    <form>
+
+                        <textarea class="email" placeholder="Your mail..." type="email"></textarea>
+
+                    </form>
+                </div>
+
+                <div>
+                    <input class="sub" type="submit" value="SUBSCRIBE">
+                </div>
+            </div>
+        </div>
+              
+            
+
+        <div id="CONTACTUS">
+            <h2>CONTACT US</h2>
+
+            <div class="flex">
+                <div class="primermargen col-2 col-s-2">
+                    <div><img src="./images/ubicacion.png" alt="Imagen decorativa para hacer referencia a la direccion"></div>
+                    <h3>ADDRESS</h3>
+                    <p>908 New Hampshire Avenue Northwest #100, Washington, DC 20037, United States</p>
+                </div>
+
+
+                <div class="col-2 col-s-2">
+                    <div><img src="./images/movil.png" alt="Imagen decorativa para hacer referencia a los telefonos"></div>
+                    <h3>PHONES</h3>
+                    <div>Phone: +1 916-875-2235</div> <div>Mobile: +1 916-875-2235</div> <div>Fax: +1 916-875-2235</div>
+                </div>
+
+
+
+                <div class="col-2 col-s-2">
+                    <div><img src="./images/mail.png" alt="Imagen decorativa para hacer referencia a los correos"></div>
+                    <h3>CONTACTS</h3>
+                    <div>info@domain.ltd</div> <div>thegem@domain.ltd</div> <div>www.codex-themes.com</div>
+                </div>
+
+
+
+                <div class="col-2 col-s-2">
+                    <div><img src="./images/time.png" alt="Imagen decorativa para hacer referencia a los horarios"></div>
+                    <h3>WORKING HOURS</h3>
+                    <div>Monday-Friday: 9:00 &#x2D; 18:00</div> <div>Saturday: 11:00 &#x2D; 17:00</div> <div>Sunday: Closed</div>
+                </div>
+
+            </div>
+
+
+            <div class="rellenar">
+                <div class="flex">
+
+                    <textarea placeholder="Name*" class="primertextA col-2 col-s-2"></textarea>
+                    <textarea placeholder="Email*" class="col-2 col-s-2"></textarea>
+                    <textarea placeholder="Website" class="col-2 col-s-2"></textarea>
+
+                </div>
+
+                <textarea placeholder="Message*" class="col-8 col-s-8 textAH"></textarea>
+
+            </div>
+
+
+            <div class="abajo">
+                <div class="submit Negrita col-8 col-s-8 abajo"><a title="Enlace en el boton SUBMIT MESSAGE, a ningun sitio" href="#">SUBMIT MESSAGE</a></div>
+            </div>
+
+        </div>  
+
+
+        <footer class="flex col-8 col-s-8">
+
+            <div class="col-3 col-s-3 ">
+                <div><img src="./images/logofoo.webp"></div>
+                <p>TheGem is a versatile wp theme with modern creative design. Made as an ultimate toolbox of content elements, styles & features, it helps people to build impressive high-performant websites. In minutes. Without coding.</p>
+            </div>
+
+            <div class="col-3 col-s-3 margen">
+                <h3>RECENT POSTS</h3>
+                <div class="flex REPO">
+                    <div><img src="./images/RECENTPOSTS_1.webp"/></div>
+                    <div>
+                        <div class="txt1">Text Blog Post</div>
+                        <div class="txt2">November 3, 2020</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="flex REPO">
+                    <div><img src="./images/RECENTPOSTS_2.webp"/></div>
+                    <div>
+                        <div class="txt1">Text Blog Post</div>
+                        <div class="txt2">November 3, 2020</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="flex REPO">
+                    <div><img src="./images/RECENTPOSTS_3.webp"/></div>
+                    <div>
+                        <div class="txt1">Text Blog Post</div>
+                        <div class="txt2">November 3, 2020</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="col-3 col-s-3 margen">
+                <h3>EMAIL US</h3>
+                <textarea placeholder="Your Name"></textarea>
+                <textarea placeholder="Your Email"></textarea>
+                <textarea class="men" placeholder="Your Message"></textarea>
+                <input class="send" type="submit" value="SEND">
+            </div>
+
+
+            <div class="col-2 col-s-2 margen">
+                <h3>LATEST PROJECTS</h3>
+
+
+                <div>
+
+                    <div class="flex LastP">
+                        <img src="./images/2.jpg" alt="Imagen de uno de los ultimos projectos">
+                        <img src="./images/3.jpg" alt="Imagen de uno de los ultimos projectos">
+                        <img src="./images/4.jpg" alt="Imagen de uno de los ultimos projectos">
+                    </div>
+
+
+
+                    <div class="flex LastP">
+                        <img src="./images/5.jpg" alt="Imagen de uno de los ultimos projectos">
+                        <img src="./images/6.jpg" alt="Imagen de uno de los ultimos projectos">
+                        <img src="./images/7.jpg" alt="Imagen de uno de los ultimos projectos">
+                    </div>
+
+
+
+                    <div class="flex LastP">
+                        <img src="./images/8.jpg" alt="Imagen de uno de los ultimos projectos">
+                        <img src="./images/9.jpg" alt="Imagen de uno de los ultimos projectos">
+                        <img src="./images/10.jpg" alt="Imagen de uno de los ultimos projectos">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+        
+        <div id="lastDIIV" class="flex">
+
+            <div class="copy col-2 col-s-2">
+                Copyright © <a href="#" title="Enlace Popyright">CodexThemes</a>
+            </div>
+
+
+            <div class="flex enlaces col-3 col-s-3">
+                <div><a href="#" title="Enlace Support">Support</a></div>
+                <div class="rayavertical">|</div>
+                <div><a href="#" title="Enlace Contact Us">Contact Us</a></div>
+                <div class="rayavertical">|</div>
+                <div><a href="#" title="Enlace Disclaimer">Disclaimer</a></div>
+                <div class="rayavertical">|</div>
+                <div><a href="#" title="Enlace Add more">Add more</a></div>
+            </div>
+
+
+            <div class="flex redes_sociales col-2 col-s-2">
+                <a href="#" title="Enlace en icono de una red social"><img alt="Imagen de una red social" src="images/f2.png"/></a>
+                <a href="#" title="Enlace en icono de una red social"><img alt="Imagen de una red social" src="images/in2.png"/></a>
+                <a href="#" title="Enlace en icono de una red social"><img alt="Imagen de una red social" src="images/t2.png"/></a>
+                <a href="#" title="Enlace en icono de una red social"><img alt="Imagen de una red social" src="images/i2.png"/></a>
+                <a href="#" title="Enlace en icono de una red social"><img alt="Imagen de una red social" src="images/P2.png"/></a>
+                <a href="#" title="Enlace en icono de una red social"><img alt="Imagen de una red social" src="images/Y2.png"/></a>
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-------------------------------------------------------------SCRIPTs------------------------------------------------------------------->
+        <script>
+
+            function myFunction() {
+
+                document.getElementById("menu").style.display = "block";
+                document.getElementById("nav2").style.backgroundColor = "rgba(243, 244, 245, 0)";
+                document.getElementById("nav1").style.backgroundColor = "rgba(243, 244, 245, 0)";
+                document.getElementById("img1").style.display = "none";
+
+            }
+
+            function myFunction2() {
+
+                document.getElementById("menu").style.display = "none";
+                document.getElementById("nav1").style.backgroundColor = "rgba(243, 244, 245, 1)";
+                document.getElementById("img1").style.display = "inline";
+
+            }
+
+        </script>
+
+
+    </body>
+
+<html>

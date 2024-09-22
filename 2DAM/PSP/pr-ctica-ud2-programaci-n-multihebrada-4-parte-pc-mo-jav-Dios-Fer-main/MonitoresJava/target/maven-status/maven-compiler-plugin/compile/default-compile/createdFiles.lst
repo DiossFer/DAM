@@ -1,0 +1,4 @@
+com/mycompany/monitorjava/datos_compartidos/Buffer.class
+com/mycompany/monitorjava/hebras/hebraProductora.class
+com/mycompany/monitorjava/principal/MonitorJava.class
+com/mycompany/monitorjava/hebras/hebraConsumidora.class
