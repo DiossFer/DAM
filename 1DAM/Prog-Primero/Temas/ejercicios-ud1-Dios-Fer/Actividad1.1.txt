@@ -1,0 +1,31 @@
+Actividad 1.1
+
+1Falso: ambos pueden estar en ambas (puedes usar un programa (memoria principal) o puedes tenerlo guardado en la memoria masiva; al igual que un dato, tu puedes almacenar datos en la masiva o usarlos en la principal), pero a la hora de usarlos ambos están en la principal.
+
+2.Falso: no tien por que, todo dependera de en que espacio este declarada la variable.
+
+3.Falso: char (para texto) ocupa 8 bits, mientras para este numero necesitamos un double o float que ocupan 64 y 32 respectivamente.
+
+4.Falso: lo que nos permite es tener un programa que se traducirá de una manera diferente a cada lenguaje máquina, pero eso si es el mismo programa.
+
+5.Falso: En el editor de texto puedes escribir con el orden que quieras y los saltos de línea que necesites lo único que importa son los “;” pues estos sí que mantendrán el orden de pasos del programa.
+
+6.Falso: el using es para usar el estándar (std) u otro, pero por ejemplo podemos hacer un programa en otro lenguaje en el que no se ponga using.
+
+7.Falso: lo que sucede es que se localiza el archivo con el código en C++ y se sustituye.
+
+8.Falso: las comillas dobles son para cadenas de caracteres, y las comillas para caracteres únicos.
+
+9.Falso: var1 se pueden todas menos año, 2ndo y true.
+
+10: Verdadero.
+
+11: Falso: b/c*d seria  igual a ((b/c)*d) pongamos un ejemplo: 2/4*2 uno de los procedimientos nos daría 2/8 mientras el otro 1 el correctos es el segundo pues se debe respetar el orden.
+
+12: Verdadero.
+
+13: Falso: el int va cuando declaramos la variable, no después de a ver metido el entero.
+
+14: Falso: al hacer dos saltos de línea no colocas nada, el programa seguirá esperando a que introduzcas el dato.
+
+15: Falso: si bien es cierto que lo que llevamos no ha sido muy complicado y ha sido mas de cantidad que de dificultad, aun falta y sin duda el muy fácil es erróneo aun mas si lo comparamos con otros lenguajes como Python.

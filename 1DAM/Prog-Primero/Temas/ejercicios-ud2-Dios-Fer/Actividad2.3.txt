@@ -1,0 +1,8 @@
+Actividad 2.3
+
+Al colocar el numero 0 con las llaves quitadas obtendria:
+
+"Es un alumno muy obediente"
+"Ups! que desobediente..."
+
+Esto pues al quitar las llaves ({}) pasa el interior del if de ser un conjunto de sentencias a una sentencia, por lo tanto tomaria el primer cout como dento del if, pero el segundo pasaria a se un cout independiente.

@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sistemaTiendaDominosKing>
+	<total_ingredientes> 17 </total_ingredientes>
+	
+<ingredientes>
+		<ingrediente>
+			<id_ingrediente> QMOZZ </id_ingrediente>
+			<nombre> Mozarella </nombre>
+			<activo> 1 </activo>
+			<precio> 0.5 </precio>
+			<tipo> Queso </tipo>
+			<numero_veces_incluido_en_pizzas> 1 </numero_veces_incluido_en_pizzas>
+		</ingrediente>
+
+		<ingrediente>
+			<id_ingrediente> QAZUL </id_ingrediente>
+			<nombre> Azul </nombre>
+			<activo> 1 </activo>
+			<precio> 0.7 </precio>
+			<tipo> Queso </tipo>
+			<numero_veces_incluido_en_pizzas> 0 </numero_veces_incluido_en_pizzas>
+		</ingrediente>
+
+		<ingrediente>
+			<id_ingrediente> QCHEDD </id_ingrediente>
+			<nombre> Cheddar </nombre>
+			<activo> 1 </activo>
+			<precio> 0.7 </precio>
+			<tipo> Queso </tipo>
+			<numero_veces_incluido_en_pizzas> 0 </numero_veces_incluido_en_pizzas>
+		</ingrediente>
+
+		<ingrediente>
+			<id_ingrediente> QPARM </id_ingrediente>
+			<nombre> Parmesano </nombre>
+			<activo> 1 </activo>
+			<precio> 0.7 </precio>
+			<tipo> Queso </tipo>
+			<numero_veces_incluido_en_pizzas> 1 </numero_veces_incluido_en_pizzas>
+		</ingrediente>
+
+		<ingrediente>
+			<id_ingrediente> CPEPP </id_ingrediente>
+			<nombre> Pepperoni </nombre>
+			<activo> 1 </activo>
+			<precio> 1.2 </precio>
+			<tipo> Carne </tipo>
+			<numero_veces_incluido_en_pizzas> 1 </numero_veces_incluido_en_pizzas>
+		</ingrediente>
+
+		<ingrediente>
+			<id_ingrediente> CYORK </id_ingrediente>
+			<nombre> JamonYork </nombre>
+			<activo> 1 </activo>
+			<precio> 1 </precio>
+			<tipo> Carne </tipo>
+			<numero_veces_incluido_en_pizzas> 1 </numero_veces_incluido_en_pizzas>
+		</ingrediente>
+
+		<ingrediente>
+			<id_ingrediente> VACEIT </id_ingrediente>
+			<nombre> Aceituna </nombre>
+			<activo> 1 </activo>
+			<precio> 0.5 </precio>
+			<tipo> Vegetal </tipo>
+			<numero_veces_incluido_en_pizzas> 1 </numero_veces_incluido_en_pizzas>
+		</ingrediente>
+
+		<ingrediente>
+			<id_ingrediente> STOMAT </id_ingrediente>
+			<nombre> Tomate </nombre>
+			<activo> 1 </activo>
+			<precio> 0.2 </precio>
+			<tipo> Salsa </tipo>
+			<numero_veces_incluido_en_pizzas> 3 </numero_veces_incluido_en_pizzas>
+		</ingrediente>
+
+		<ingrediente>
+			<id_ingrediente> SNATA </id_ingrediente>
+			<nombre> Nata </nombre>
+			<activo> 1 </activo>
+			<precio> 0.5 </precio>
+			<tipo> Salsa </tipo>
+			<numero_veces_incluido_en_pizzas> 1 </numero_veces_incluido_en_pizzas>
+		</ingrediente>
+
+		<ingrediente>
+			<id_ingrediente> CBACO </id_ingrediente>
+			<nombre> bacon </nombre>
+			<activo> 1 </activo>
+			<precio> 1 </precio>
+			<tipo> Carne </tipo>
+			<numero_veces_incluido_en_pizzas> 0 </numero_veces_incluido_en_pizzas>
+		</ingrediente>
+
+		<ingrediente>
+			<id_ingrediente> SBARBA </id_ingrediente>
+			<nombre> Barbacoa </nombre>
+			<activo> 1 </activo>
+			<precio> 0.5 </precio>
+			<tipo> Salsa </tipo>
+			<numero_veces_incluido_en_pizzas> 0 </numero_veces_incluido_en_pizzas>
+		</ingrediente>
+
+		<ingrediente>
+			<id_ingrediente> VPIÑA </id_ingrediente>
+			<nombre> Piña </nombre>
+			<activo> 1 </activo>
+			<precio> 1 </precio>
+			<tipo> Vegetal </tipo>
+			<numero_veces_incluido_en_pizzas> 0 </numero_veces_incluido_en_pizzas>
+		</ingrediente>
+
+		<ingrediente>
+			<id_ingrediente> VCHAMP </id_ingrediente>
+			<nombre> Champiñones </nombre>
+			<activo> 1 </activo>
+			<precio> 0.7 </precio>
+			<tipo> Vegetal </tipo>
+			<numero_veces_incluido_en_pizzas> 1 </numero_veces_incluido_en_pizzas>
+		</ingrediente>
+
+		<ingrediente>
+			<id_ingrediente> VCEBO </id_ingrediente>
+			<nombre> Cebolla </nombre>
+			<activo> 1 </activo>
+			<precio> 0.3 </precio>
+			<tipo> Vegetal </tipo>
+			<numero_veces_incluido_en_pizzas> 1 </numero_veces_incluido_en_pizzas>
+		</ingrediente>
+
+		<ingrediente>
+			<id_ingrediente> CATUN </id_ingrediente>
+			<nombre> Atun </nombre>
+			<activo> 1 </activo>
+			<precio> 0.9 </precio>
+			<tipo> Carne </tipo>
+			<numero_veces_incluido_en_pizzas> 1 </numero_veces_incluido_en_pizzas>
+		</ingrediente>
+
+		<ingrediente>
+			<id_ingrediente> VMAIZ </id_ingrediente>
+			<nombre> Maiz </nombre>
+			<activo> 1 </activo>
+			<precio> 0.3 </precio>
+			<tipo> Vegetal </tipo>
+			<numero_veces_incluido_en_pizzas> 0 </numero_veces_incluido_en_pizzas>
+		</ingrediente>
+
+		<ingrediente>
+			<id_ingrediente> CJAM </id_ingrediente>
+			<nombre> Jamon </nombre>
+			<activo> 1 </activo>
+			<precio> 1.2 </precio>
+			<tipo> Carne </tipo>
+			<numero_veces_incluido_en_pizzas> 0 </numero_veces_incluido_en_pizzas>
+		</ingrediente>
+
+	</ingredientes>
+
+	<total_productos> 6 </total_productos>
+	<productos>
+
+		<total_pizzas> 3 </total_pizzas>
+		<pizzas>
+
+			<pizza>
+				<id_producto> PNAPO </id_producto>
+				<nombre> Napoli </nombre>
+				<activo> 1 </activo>
+				<precio_con_iva> 9.196 </precio_con_iva>
+				<precio_sin_iva> 7.6 </precio_sin_iva>
+				<iva> 21 </iva>
+				<num_valoraciones> 1 </num_valoraciones>
+				<media_valoraciones> 2 </media_valoraciones>
+				<tamanio> Mediana </tamanio>
+				<valoracion_total> 2 </valoracion_total>
+				<num_veces_incluido_en_pedidos> 4 </num_veces_incluido_en_pedidos>
+				<tipo_pizza> Sistema </tipo_pizza>
+				<precio_base> 5 </precio_base>
+				<total_ingredientes_pizza> 4 </total_ingredientes_pizza>
+					<ingredientes> 
+						<ingrediente> STOMAT </ingrediente>
+						<ingrediente> CPEPP </ingrediente>
+						<ingrediente> QPARM </ingrediente>
+						<ingrediente> SNATA </ingrediente>
+					</ingredientes>
+			</pizza>
+
+			<pizza>
+				<id_producto> PMEDI </id_producto>
+				<nombre> Mediterranea </nombre>
+				<activo> 1 </activo>
+				<precio_con_iva> 9.196 </precio_con_iva>
+				<precio_sin_iva> 7.6 </precio_sin_iva>
+				<iva> 21 </iva>
+				<num_valoraciones> 2 </num_valoraciones>
+				<media_valoraciones> 4 </media_valoraciones>
+				<tamanio> Mediana </tamanio>
+				<valoracion_total> 8 </valoracion_total>
+				<num_veces_incluido_en_pedidos> 3 </num_veces_incluido_en_pedidos>
+				<tipo_pizza> Sistema </tipo_pizza>
+				<precio_base> 5 </precio_base>
+				<total_ingredientes_pizza> 5 </total_ingredientes_pizza>
+					<ingredientes> 
+						<ingrediente> STOMAT </ingrediente>
+						<ingrediente> VACEIT </ingrediente>
+						<ingrediente> VCEBO </ingrediente>
+						<ingrediente> VCHAMP </ingrediente>
+						<ingrediente> CATUN </ingrediente>
+					</ingredientes>
+			</pizza>
+
+			<pizza>
+				<id_producto> PJAJQ </id_producto>
+				<nombre> YorkyQueso </nombre>
+				<activo> 1 </activo>
+				<precio_con_iva> 5.687 </precio_con_iva>
+				<precio_sin_iva> 4.7 </precio_sin_iva>
+				<iva> 21 </iva>
+				<num_valoraciones> 0 </num_valoraciones>
+				<media_valoraciones> 0 </media_valoraciones>
+				<tamanio> Pequeña </tamanio>
+				<valoracion_total> 0 </valoracion_total>
+				<num_veces_incluido_en_pedidos> 2 </num_veces_incluido_en_pedidos>
+				<tipo_pizza> Sistema </tipo_pizza>
+				<precio_base> 3 </precio_base>
+				<total_ingredientes_pizza> 3 </total_ingredientes_pizza>
+					<ingredientes> 
+						<ingrediente> QMOZZ </ingrediente>
+						<ingrediente> CYORK </ingrediente>
+						<ingrediente> STOMAT </ingrediente>
+					</ingredientes>
+			</pizza>
+
+		</pizzas>
+
+		<total_refrescos> 3 </total_refrescos>
+		<refrescos>
+
+			</refresco>
+				<id_producto> RPEP </id_producto>
+				<nombre> Pepsi </nombre>
+				<activo> 1 </activo>
+				<precio_con_iva> 1.21 </precio_con_iva>
+				<precio_sin_iva> 1 </precio_sin_iva>
+				<iva> 21 </iva>
+				<num_valoraciones> 0 </num_valoraciones>
+				<media_valoraciones> 0 </media_valoraciones>
+				<tamanio> Pequeña </tamanio>
+				<valoracion_total> 0 </valoracion_total>
+				<num_veces_incluido_en_pedidos> 1 </num_veces_incluido_en_pedidos>
+				<azucar> 1 </azucar>
+				<gas> 1 </gas>
+				<cafeina> 1 </cafeina>
+			</refresco>
+
+			</refresco>
+				<id_producto> RFANZ </id_producto>
+				<nombre> FantaZero </nombre>
+				<activo> 1 </activo>
+				<precio_con_iva> 1.815 </precio_con_iva>
+				<precio_sin_iva> 1.5 </precio_sin_iva>
+				<iva> 21 </iva>
+				<num_valoraciones> 0 </num_valoraciones>
+				<media_valoraciones> 0 </media_valoraciones>
+				<tamanio> Mediana </tamanio>
+				<valoracion_total> 0 </valoracion_total>
+				<num_veces_incluido_en_pedidos> 1 </num_veces_incluido_en_pedidos>
+				<azucar> 0 </azucar>
+				<gas> 1 </gas>
+				<cafeina> 0 </cafeina>
+			</refresco>
+
+			</refresco>
+				<id_producto> RAQUA </id_producto>
+				<nombre> Aquarius </nombre>
+				<activo> 1 </activo>
+				<precio_con_iva> 2.057 </precio_con_iva>
+				<precio_sin_iva> 1.7 </precio_sin_iva>
+				<iva> 21 </iva>
+				<num_valoraciones> 0 </num_valoraciones>
+				<media_valoraciones> 0 </media_valoraciones>
+				<tamanio> Grande </tamanio>
+				<valoracion_total> 0 </valoracion_total>
+				<num_veces_incluido_en_pedidos> 3 </num_veces_incluido_en_pedidos>
+				<azucar> 1 </azucar>
+				<gas> 0 </gas>
+				<cafeina> 0 </cafeina>
+			</refresco>
+
+		</refrescos>
+
+	</productos>
+
+	<total_clientes_sistema> 3 <total_clientes_sistema>
+
+	<clientes>
+
+		<cliente>
+
+			<id_cliente> admin </id_cliente> 
+
+			<login> admin </login> 
+
+			<password> admin </password> 
+
+			<nombre> admin </nombre> 
+
+			<activo> 1 </activo> 
+
+			<numero_telefono> admin </numero_telefono> 
+
+			<direccion> admin </direccion> 
+
+			<valoracion_media_productos> 0 </valoracion_media_productos>
+
+			<precio_medio_pedidos> 0 </precio_medio_pedidos>
+
+			<total_valoraciones> 0 </total_valoraciones>
+
+			<total_pedidos> 0 </total_pedidos>
+
+			<pedidos>
+			</pedidos>
+		</cliente>
+
+		<cliente>
+
+			<id_cliente> HJ64C </id_cliente> 
+
+			<login> hulio99 </login> 
+
+			<password> toby123 </password> 
+
+			<nombre> Julio </nombre> 
+
+			<activo> 1 </activo> 
+
+			<numero_telefono> 645123490 </numero_telefono> 
+
+			<direccion> Candil14 </direccion> 
+
+			<valoracion_media_productos> 2.5 </valoracion_media_productos>
+
+			<precio_medio_pedidos> 18.4323 </precio_medio_pedidos>
+
+			<total_valoraciones> 2 </total_valoraciones>
+
+			<total_pedidos> 3 </total_pedidos>
+
+			<pedidos>
+				<pedido>
+					<id_pedido> PED1 <id_pedido>
+					<fecha>
+						<anio> 2023 <anio>
+						<mes> 5 <mes>
+						<dia> 20 <dia>
+					</fecha>
+					<hora>
+						<hora> 22 <hora>
+						<minutos> 4 <minutos>
+						<segundos> 0 <segundos>
+					</hora>
+					<estado> preparacion <estado>
+					<total_precio_pedido_sin_iva> 19.602 <total_precio_pedido_sin_iva>
+					<total_precio_pedido_con_iva> 16.2 <total_precio_pedido_con_iva>
+					<cancelable> 1 <cancelable>
+					<total_productos> 3 <total_productos>
+					<productos>
+						<producto> PNAPO <producto>
+						<producto> PMEDI <producto>
+						<producto> RPEP <producto>
+					</productos>
+				</pedido>
+				<pedido>
+					<id_pedido> PED2 <id_pedido>
+					<fecha>
+						<anio> 2023 <anio>
+						<mes> 5 <mes>
+						<dia> 20 <dia>
+					</fecha>
+					<hora>
+						<hora> 21 <hora>
+						<minutos> 20 <minutos>
+						<segundos> 0 <segundos>
+					</hora>
+					<estado> preparacion <estado>
+					<total_precio_pedido_sin_iva> 9.559 <total_precio_pedido_sin_iva>
+					<total_precio_pedido_con_iva> 7.9 <total_precio_pedido_con_iva>
+					<cancelable> 1 <cancelable>
+					<total_productos> 3 <total_productos>
+					<productos>
+						<producto> PJAJQ <producto>
+						<producto> RFANZ <producto>
+						<producto> RAQUA <producto>
+					</productos>
+				</pedido>
+				<pedido>
+					<id_pedido> PED3 <id_pedido>
+					<fecha>
+						<anio> 2023 <anio>
+						<mes> 5 <mes>
+						<dia> 20 <dia>
+					</fecha>
+					<hora>
+						<hora> 23 <hora>
+						<minutos> 32 <minutos>
+						<segundos> 0 <segundos>
+					</hora>
+					<estado> preparacion <estado>
+					<total_precio_pedido_sin_iva> 26.136 <total_precio_pedido_sin_iva>
+					<total_precio_pedido_con_iva> 21.6 <total_precio_pedido_con_iva>
+					<cancelable> 1 <cancelable>
+					<total_productos> 4 <total_productos>
+					<productos>
+						<producto> PNAPO <producto>
+						<producto> PMEDI <producto>
+						<producto> PJAJQ <producto>
+						<producto> RAQUA <producto>
+					</productos>
+				</pedido>
+			</pedidos>
+		</cliente>
+
+		<cliente>
+
+			<id_cliente> SA68R </id_cliente> 
+
+			<login> suangus1 </login> 
+
+			<password> 22111978 </password> 
+
+			<nombre> Angustias </nombre> 
+
+			<activo> 1 </activo> 
+
+			<numero_telefono> 689774329 </numero_telefono> 
+
+			<direccion> Romero1 </direccion> 
+
+			<valoracion_media_productos> 5 </valoracion_media_productos>
+
+			<precio_medio_pedidos> 29.645 </precio_medio_pedidos>
+
+			<total_valoraciones> 1 </total_valoraciones>
+
+			<total_pedidos> 1 </total_pedidos>
+
+			<pedidos>
+				<pedido>
+					<id_pedido> PED4 <id_pedido>
+					<fecha>
+						<anio> 2023 <anio>
+						<mes> 5 <mes>
+						<dia> 20 <dia>
+					</fecha>
+					<hora>
+						<hora> 21 <hora>
+						<minutos> 54 <minutos>
+						<segundos> 0 <segundos>
+					</hora>
+					<estado> preparacion <estado>
+					<total_precio_pedido_sin_iva> 29.645 <total_precio_pedido_sin_iva>
+					<total_precio_pedido_con_iva> 24.5 <total_precio_pedido_con_iva>
+					<cancelable> 1 <cancelable>
+					<total_productos> 4 <total_productos>
+					<productos>
+						<producto> PNAPO <producto>
+						<producto> PNAPO <producto>
+						<producto> PMEDI <producto>
+						<producto> RAQUA <producto>
+					</productos>
+				</pedido>
+			</pedidos>
+		</cliente>
+
+	</clientes>
+
+	<total_valoraciones> 3 </total_valoraciones>
+
+	<valoraciones>
+
+		<valoracion>
+
+			<id_valoracion> 1VAL2 <id_valoracion>
+			<id_cliente> HJ64C <id_cliente>
+			<id_producto> PNAPO <id_producto>
+			<estrellas> 2 <estrellas>
+		</valoracion>
+
+		<valoracion>
+
+			<id_valoracion> 2VAL5 <id_valoracion>
+			<id_cliente> SA68R <id_cliente>
+			<id_producto> PMEDI <id_producto>
+			<estrellas> 5 <estrellas>
+		</valoracion>
+
+		<valoracion>
+
+			<id_valoracion> 3VAL3 <id_valoracion>
+			<id_cliente> HJ64C <id_cliente>
+			<id_producto> PMEDI <id_producto>
+			<estrellas> 3 <estrellas>
+		</valoracion>
+
+	</valoraciones>
+
+</sistemaTiendaDominosKing>

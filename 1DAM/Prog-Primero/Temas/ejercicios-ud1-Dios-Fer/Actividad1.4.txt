@@ -1,0 +1,4 @@
+Actividad 1.4
+La salida por pantalla del programa es:
+1º Apartado: 26.6667
+2º Apartado: -inf (no se puede dividir entre 0)
