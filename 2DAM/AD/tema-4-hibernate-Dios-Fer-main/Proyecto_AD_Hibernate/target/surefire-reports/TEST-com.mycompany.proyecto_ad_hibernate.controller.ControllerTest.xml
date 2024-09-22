@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="5.956" tests="43" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\DiosFer\Documents\NetBeansProjects\ProyectoGamesHibernate\tema-4-hibernate-Dios-Fer\Proyecto_AD_Hibernate\target\test-classes;C:\Users\DiosFer\Documents\NetBeansProjects\ProyectoGamesHibernate\tema-4-hibernate-Dios-Fer\Proyecto_AD_Hibernate\target\classes;C:\Users\DiosFer\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\DiosFer\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\DiosFer\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\DiosFer\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\DiosFer\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\DiosFer\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\DiosFer\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\DiosFer\.m2\repository\org\mongodb\mongodb-driver-sync\4.11.1\mongodb-driver-sync-4.11.1.jar;C:\Users\DiosFer\.m2\repository\org\mongodb\bson\4.11.1\bson-4.11.1.jar;C:\Users\DiosFer\.m2\repository\org\mongodb\mongodb-driver-core\4.11.1\mongodb-driver-core-4.11.1.jar;C:\Users\DiosFer\.m2\repository\org\mongodb\bson-record-codec\4.11.1\bson-record-codec-4.11.1.jar;C:\Users\DiosFer\.m2\repository\org\hibernate\orm\hibernate-core\6.3.1.Final\hibernate-core-6.3.1.Final.jar;C:\Users\DiosFer\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\DiosFer\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\DiosFer\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\DiosFer\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\DiosFer\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\DiosFer\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\DiosFer\.m2\repository\net\bytebuddy\byte-buddy\1.14.7\byte-buddy-1.14.7.jar;C:\Users\DiosFer\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\DiosFer\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\DiosFer\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\DiosFer\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\DiosFer\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\DiosFer\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\DiosFer\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\DiosFer\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\DiosFer\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\DiosFer\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.core\2.7.12\org.eclipse.persistence.core-2.7.12.jar;C:\Users\DiosFer\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.asm\9.4.0\org.eclipse.persistence.asm-9.4.0.jar;C:\Users\DiosFer\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.antlr\2.7.12\org.eclipse.persistence.antlr-2.7.12.jar;C:\Users\DiosFer\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.jpa\2.7.12\org.eclipse.persistence.jpa-2.7.12.jar;C:\Users\DiosFer\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.jpa.jpql\2.7.12\org.eclipse.persistence.jpa.jpql-2.7.12.jar;C:\Users\DiosFer\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.moxy\2.7.12\org.eclipse.persistence.moxy-2.7.12.jar;C:\Users\DiosFer\.m2\repository\org\eclipse\persistence\jakarta.persistence\2.2.3\jakarta.persistence-2.2.3.jar;C:\Users\DiosFer\.m2\repository\mysql\mysql-connector-java\8.0.23\mysql-connector-java-8.0.23.jar;C:\Users\DiosFer\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Madrid"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\DiosFer\AppData\Local\Temp\surefire15423166702985986726\surefirebooter-20240129194705848_3.jar C:\Users\DiosFer\AppData\Local\Temp\surefire15423166702985986726 2024-01-29T19-47-05_397-jvmRun1 surefire-20240129194705848_1tmp surefire_0-20240129194705848_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\DiosFer\Documents\NetBeansProjects\ProyectoGamesHibernate\tema-4-hibernate-Dios-Fer\Proyecto_AD_Hibernate\target\test-classes;C:\Users\DiosFer\Documents\NetBeansProjects\ProyectoGamesHibernate\tema-4-hibernate-Dios-Fer\Proyecto_AD_Hibernate\target\classes;C:\Users\DiosFer\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\DiosFer\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\DiosFer\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\DiosFer\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\DiosFer\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\DiosFer\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\DiosFer\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\DiosFer\.m2\repository\org\mongodb\mongodb-driver-sync\4.11.1\mongodb-driver-sync-4.11.1.jar;C:\Users\DiosFer\.m2\repository\org\mongodb\bson\4.11.1\bson-4.11.1.jar;C:\Users\DiosFer\.m2\repository\org\mongodb\mongodb-driver-core\4.11.1\mongodb-driver-core-4.11.1.jar;C:\Users\DiosFer\.m2\repository\org\mongodb\bson-record-codec\4.11.1\bson-record-codec-4.11.1.jar;C:\Users\DiosFer\.m2\repository\org\hibernate\orm\hibernate-core\6.3.1.Final\hibernate-core-6.3.1.Final.jar;C:\Users\DiosFer\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\DiosFer\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\DiosFer\.m2\repository\org\jboss\logging\jboss-logging\3.5.0.Final\jboss-logging-3.5.0.Final.jar;C:\Users\DiosFer\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\DiosFer\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\DiosFer\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\DiosFer\.m2\repository\net\bytebuddy\byte-buddy\1.14.7\byte-buddy-1.14.7.jar;C:\Users\DiosFer\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.0\jakarta.xml.bind-api-4.0.0.jar;C:\Users\DiosFer\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.0\jakarta.activation-api-2.1.0.jar;C:\Users\DiosFer\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.2\jaxb-runtime-4.0.2.jar;C:\Users\DiosFer\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.2\jaxb-core-4.0.2.jar;C:\Users\DiosFer\.m2\repository\org\eclipse\angus\angus-activation\2.0.0\angus-activation-2.0.0.jar;C:\Users\DiosFer\.m2\repository\org\glassfish\jaxb\txw2\4.0.2\txw2-4.0.2.jar;C:\Users\DiosFer\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.1\istack-commons-runtime-4.1.1.jar;C:\Users\DiosFer\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\DiosFer\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\DiosFer\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.core\2.7.12\org.eclipse.persistence.core-2.7.12.jar;C:\Users\DiosFer\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.asm\9.4.0\org.eclipse.persistence.asm-9.4.0.jar;C:\Users\DiosFer\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.antlr\2.7.12\org.eclipse.persistence.antlr-2.7.12.jar;C:\Users\DiosFer\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.jpa\2.7.12\org.eclipse.persistence.jpa-2.7.12.jar;C:\Users\DiosFer\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.jpa.jpql\2.7.12\org.eclipse.persistence.jpa.jpql-2.7.12.jar;C:\Users\DiosFer\.m2\repository\org\eclipse\persistence\org.eclipse.persistence.moxy\2.7.12\org.eclipse.persistence.moxy-2.7.12.jar;C:\Users\DiosFer\.m2\repository\org\eclipse\persistence\jakarta.persistence\2.2.3\jakarta.persistence-2.2.3.jar;C:\Users\DiosFer\.m2\repository\mysql\mysql-connector-java\8.0.23\mysql-connector-java-8.0.23.jar;C:\Users\DiosFer\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\DiosFer"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-07-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\DiosFer\Documents\NetBeansProjects\ProyectoGamesHibernate\tema-4-hibernate-Dios-Fer\Proyecto_AD_Hibernate"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\DiosFer\AppData\Local\Temp\surefire15423166702985986726\surefirebooter-20240129194705848_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
+    <property name="user.name" value="DiosFer"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-18\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="localRepository" value="C:\Users\DiosFer\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\DiosFer\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.8"/>
+    <property name="user.dir" value="C:\Users\DiosFer\Documents\NetBeansProjects\ProyectoGamesHibernate\tema-4-hibernate-Dios-Fer\Proyecto_AD_Hibernate"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Microsoft MPI\Bin\;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\DiosFer\Documents\SQLITE;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\DiosFer\AppData\Local\Microsoft\WindowsApps;C:\Users\DiosFer\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\DiosFer\AppData\Local\GitHubDesktop\bin;C:\Program Files\sf\bin;C:\Program Files\Java\jdk-17\bin;;C:\Program Files\Azure Data Studio\bin;C:\Users\DiosFer\.dotnet\tools;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.8+9-LTS-211"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testModificarJugador_1" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.064">
+    <system-out><![CDATA[Hibernate: select s1_0.IdServer,s1_0.region from servidores s1_0
+Hibernate: select j1_0.IdPlayer,j1_0.NickName,j1_0.nivel,j1_0.partidaEnJugador from jugadores j1_0
+Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados from inventarios ic1_0
+Hibernate: select p1_0.IdPartida,p1_0.NumEspectadores,p1_0.ServerPartida from partidas p1_0
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: insert into servidores (region,IdServer) values (?,?)
+Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+Hibernate: insert into inventarios (SlotsMaximos,SlotsOcupados,IdInventario) values (?,?,?)
+Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+Hibernate: insert into inventarios (SlotsMaximos,SlotsOcupados,IdInventario) values (?,?,?)
+Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+Hibernate: insert into inventarios (SlotsMaximos,SlotsOcupados,IdInventario) values (?,?,?)
+Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+Hibernate: insert into inventarios (SlotsMaximos,SlotsOcupados,IdInventario) values (?,?,?)
+Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+Hibernate: insert into inventarios (SlotsMaximos,SlotsOcupados,IdInventario) values (?,?,?)
+Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+Hibernate: insert into inventarios (SlotsMaximos,SlotsOcupados,IdInventario) values (?,?,?)
+Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+Hibernate: insert into inventarios (SlotsMaximos,SlotsOcupados,IdInventario) values (?,?,?)
+Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+Hibernate: insert into inventarios (SlotsMaximos,SlotsOcupados,IdInventario) values (?,?,?)
+Hibernate: insert into jugadores (NickName,nivel,partidaEnJugador,IdPlayer) values (?,?,?,?)
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: insert into jugadores (NickName,nivel,partidaEnJugador,IdPlayer) values (?,?,?,?)
+Hibernate: insert into jugadores (NickName,nivel,partidaEnJugador,IdPlayer) values (?,?,?,?)
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: insert into jugadores (NickName,nivel,partidaEnJugador,IdPlayer) values (?,?,?,?)
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: insert into jugadores (NickName,nivel,partidaEnJugador,IdPlayer) values (?,?,?,?)
+Hibernate: insert into jugadores (NickName,nivel,partidaEnJugador,IdPlayer) values (?,?,?,?)
+Hibernate: insert into jugadores (NickName,nivel,partidaEnJugador,IdPlayer) values (?,?,?,?)
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: insert into jugadores (NickName,nivel,partidaEnJugador,IdPlayer) values (?,?,?,?)
+Hibernate: insert into jugadores (NickName,nivel,partidaEnJugador,IdPlayer) values (?,?,?,?)
+Hibernate: insert into jugadores (NickName,nivel,partidaEnJugador,IdPlayer) values (?,?,?,?)
+Hibernate: insert into jugadores (NickName,nivel,partidaEnJugador,IdPlayer) values (?,?,?,?)
+Hibernate: insert into jugadores (NickName,nivel,partidaEnJugador,IdPlayer) values (?,?,?,?)
+Hibernate: insert into jugadores (NickName,nivel,partidaEnJugador,IdPlayer) values (?,?,?,?)
+Hibernate: insert into jugadores (NickName,nivel,partidaEnJugador,IdPlayer) values (?,?,?,?)
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: insert into jugadores (NickName,nivel,partidaEnJugador,IdPlayer) values (?,?,?,?)
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: insert into jugadores (NickName,nivel,partidaEnJugador,IdPlayer) values (?,?,?,?)
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: insert into partidas (NumEspectadores,ServerPartida,IdPartida) values (?,?,?)
+Hibernate: update jugadores set NickName=?,nivel=?,partidaEnJugador=? where IdPlayer=?
+Hibernate: update jugadores set NickName=?,nivel=?,partidaEnJugador=? where IdPlayer=?
+Hibernate: insert into partidas (NumEspectadores,ServerPartida,IdPartida) values (?,?,?)
+Hibernate: insert into partidas (NumEspectadores,ServerPartida,IdPartida) values (?,?,?)
+Hibernate: update jugadores set NickName=?,nivel=?,partidaEnJugador=? where IdPlayer=?
+Hibernate: insert into partidas (NumEspectadores,ServerPartida,IdPartida) values (?,?,?)
+Hibernate: update jugadores set NickName=?,nivel=?,partidaEnJugador=? where IdPlayer=?
+Hibernate: insert into partidas (NumEspectadores,ServerPartida,IdPartida) values (?,?,?)
+Hibernate: insert into partidas (NumEspectadores,ServerPartida,IdPartida) values (?,?,?)
+Hibernate: insert into partidas (NumEspectadores,ServerPartida,IdPartida) values (?,?,?)
+Hibernate: update jugadores set NickName=?,nivel=?,partidaEnJugador=? where IdPlayer=?
+Hibernate: delete from accesos where IdPlayer=?
+Hibernate: select j1_0.IdPlayer,j1_0.NickName,j1_0.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from jugadores j1_0 left join partidas pej1_0 on pej1_0.IdPartida=j1_0.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida left join (accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario) on j1_0.IdPlayer=ica1_0.IdPlayer where j1_0.IdPlayer=?
+]]></system-out>
+    <system-err><![CDATA[ene 29, 2024 7:47:07 P. M. org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.3.1.Final
+ene 29, 2024 7:47:07 P. M. org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver resolveEntity
+WARN: HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+ene 29, 2024 7:47:08 P. M. org.hibernate.cache.internal.RegionFactoryInitiator initiateService
+INFO: HHH000026: Second-level cache disabled
+ene 29, 2024 7:47:08 P. M. org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using built-in connection pool (not intended for production use)
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ene 29, 2024 7:47:08 P. M. org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: Loaded JDBC driver class: com.mysql.jdbc.Driver
+ene 29, 2024 7:47:08 P. M. org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001012: Connecting with JDBC URL [jdbc:mysql://localhost/proyectogameshibernatetest]
+ene 29, 2024 7:47:08 P. M. org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {password=****, user=usuarioHibernate1}
+ene 29, 2024 7:47:08 P. M. org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+ene 29, 2024 7:47:08 P. M. org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH10001115: Connection pool size: 20 (min=1)
+ene 29, 2024 7:47:09 P. M. org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl constructDialect
+WARN: HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+ene 29, 2024 7:47:10 P. M. org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+]]></system-err>
+  </testcase>
+  <testcase name="testModificarJugador_2" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.054">
+    <system-out><![CDATA[Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+Hibernate: select s1_0.IdServer,s1_0.region from servidores s1_0 where s1_0.IdServer=?
+Hibernate: select s1_0.IdServer,s1_0.region from servidores s1_0 where s1_0.IdServer=?
+Hibernate: select j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from jugadores j1_0 where j1_0.partidaEnJugador=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from jugadores j1_0 where j1_0.partidaEnJugador=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select j1_0.IdPlayer,j1_0.NickName,j1_0.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from jugadores j1_0 left join partidas pej1_0 on pej1_0.IdPartida=j1_0.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida left join (accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario) on j1_0.IdPlayer=ica1_0.IdPlayer where j1_0.IdPlayer=?
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: select j1_0.IdPlayer,j1_0.NickName,j1_0.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from jugadores j1_0 left join partidas pej1_0 on pej1_0.IdPartida=j1_0.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida left join (accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario) on j1_0.IdPlayer=ica1_0.IdPlayer where j1_0.IdPlayer=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+Hibernate: select j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from jugadores j1_0 where j1_0.partidaEnJugador=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from jugadores j1_0 where j1_0.partidaEnJugador=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+]]></system-out>
+  </testcase>
+  <testcase name="testModificarJugador_3" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.002"/>
+  <testcase name="testModificarJugador_4" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.003"/>
+  <testcase name="testModificarInventario_1" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.045">
+    <system-out><![CDATA[Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+Hibernate: select j1_0.IdPlayer,j1_0.NickName,j1_0.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from jugadores j1_0 left join partidas pej1_0 on pej1_0.IdPartida=j1_0.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida left join (accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario) on j1_0.IdPlayer=ica1_0.IdPlayer where j1_0.IdPlayer=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+Hibernate: select j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from jugadores j1_0 where j1_0.partidaEnJugador=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from jugadores j1_0 where j1_0.partidaEnJugador=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+Hibernate: insert into inventarios (SlotsMaximos,SlotsOcupados,IdInventario) values (?,?,?)
+Hibernate: update inventarios set SlotsMaximos=?,SlotsOcupados=? where IdInventario=?
+Hibernate: delete from accesos where IdPlayer=?
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+]]></system-out>
+  </testcase>
+  <testcase name="testModificarInventario_2" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.085">
+    <system-out><![CDATA[Hibernate: select j1_0.IdPlayer,j1_0.NickName,j1_0.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from jugadores j1_0 left join partidas pej1_0 on pej1_0.IdPartida=j1_0.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida left join (accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario) on j1_0.IdPlayer=ica1_0.IdPlayer where j1_0.IdPlayer=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+Hibernate: select j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from jugadores j1_0 where j1_0.partidaEnJugador=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from jugadores j1_0 where j1_0.partidaEnJugador=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+Hibernate: update inventarios set SlotsMaximos=?,SlotsOcupados=? where IdInventario=?
+Hibernate: delete from accesos where IdPlayer=?
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+Hibernate: select s1_0.IdServer,s1_0.region from servidores s1_0 where s1_0.IdServer=?
+Hibernate: select j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from jugadores j1_0 where j1_0.partidaEnJugador=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+Hibernate: select j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from jugadores j1_0 where j1_0.partidaEnJugador=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+]]></system-out>
+  </testcase>
+  <testcase name="testModificarInventario_3" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.03">
+    <system-out><![CDATA[Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+Hibernate: select s1_0.IdServer,s1_0.region from servidores s1_0 where s1_0.IdServer=?
+Hibernate: select j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from jugadores j1_0 where j1_0.partidaEnJugador=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+Hibernate: select j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from jugadores j1_0 where j1_0.partidaEnJugador=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+]]></system-out>
+  </testcase>
+  <testcase name="testModificarInventario_4" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.01">
+    <system-out><![CDATA[Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+]]></system-out>
+  </testcase>
+  <testcase name="testModificarInventario_5" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.007">
+    <system-out><![CDATA[Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+Hibernate: update inventarios set SlotsMaximos=?,SlotsOcupados=? where IdInventario=?
+Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+]]></system-out>
+  </testcase>
+  <testcase name="testCrearPartida_1" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.017">
+    <system-out><![CDATA[Hibernate: select null,s1_0.region from servidores s1_0 where s1_0.IdServer=?
+Hibernate: insert into partidas (NumEspectadores,ServerPartida,IdPartida) values (?,?,?)
+]]></system-out>
+  </testcase>
+  <testcase name="testCrearPartida_2" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.01">
+    <system-out><![CDATA[Hibernate: select j1_0.IdPlayer,j1_0.NickName,j1_0.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from jugadores j1_0 left join partidas pej1_0 on pej1_0.IdPartida=j1_0.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida left join (accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario) on j1_0.IdPlayer=ica1_0.IdPlayer where j1_0.IdPlayer=?
+Hibernate: select j1_0.IdPlayer,j1_0.NickName,j1_0.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from jugadores j1_0 left join partidas pej1_0 on pej1_0.IdPartida=j1_0.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida left join (accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario) on j1_0.IdPlayer=ica1_0.IdPlayer where j1_0.IdPlayer=?
+Hibernate: select null,s1_0.region from servidores s1_0 where s1_0.IdServer=?
+Hibernate: insert into partidas (NumEspectadores,ServerPartida,IdPartida) values (?,?,?)
+Hibernate: update jugadores set NickName=?,nivel=?,partidaEnJugador=? where IdPlayer=?
+Hibernate: update jugadores set NickName=?,nivel=?,partidaEnJugador=? where IdPlayer=?
+]]></system-out>
+  </testcase>
+  <testcase name="testCrearPartida_3" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.001"/>
+  <testcase name="testCrearPartida_4" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.003"/>
+  <testcase name="testCrearPartida_5" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.002"/>
+  <testcase name="testCrearPartida_6" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.001"/>
+  <testcase name="testCrearPartida_7" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.001"/>
+  <testcase name="testCrearServidor_1" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.009">
+    <system-out><![CDATA[Hibernate: insert into servidores (region,IdServer) values (?,?)
+]]></system-out>
+  </testcase>
+  <testcase name="testCrearJugador_1" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.013">
+    <system-out><![CDATA[Hibernate: insert into jugadores (NickName,nivel,partidaEnJugador,IdPlayer) values (?,?,?,?)
+]]></system-out>
+  </testcase>
+  <testcase name="testCrearJugador_2" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.019">
+    <system-out><![CDATA[Hibernate: insert into jugadores (NickName,nivel,partidaEnJugador,IdPlayer) values (?,?,?,?)
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+Hibernate: insert into accesos (IdPlayer,IdInventario) values (?,?)
+]]></system-out>
+  </testcase>
+  <testcase name="testCrearJugador_3" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.002"/>
+  <testcase name="testCrearJugador_4" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.002"/>
+  <testcase name="testEliminarPartida_1" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.047">
+    <system-out><![CDATA[Hibernate: select p1_0.IdPartida,p1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from partidas p1_0 left join servidores sp1_0 on sp1_0.IdServer=p1_0.ServerPartida left join jugadores j1_0 on p1_0.IdPartida=j1_0.partidaEnJugador where p1_0.IdPartida=?
+Hibernate: delete from partidas where IdPartida=?
+Hibernate: select p1_0.IdPartida,p1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from partidas p1_0 left join servidores sp1_0 on sp1_0.IdServer=p1_0.ServerPartida left join jugadores j1_0 on p1_0.IdPartida=j1_0.partidaEnJugador where p1_0.IdPartida=?
+]]></system-out>
+  </testcase>
+  <testcase name="testCrearInventario_1" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.017">
+    <system-out><![CDATA[Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+Hibernate: insert into inventarios (SlotsMaximos,SlotsOcupados,IdInventario) values (?,?,?)
+]]></system-out>
+  </testcase>
+  <testcase name="testCrearInventario_2" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.05">
+    <system-out><![CDATA[Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+Hibernate: select j1_0.IdPlayer,j1_0.NickName,j1_0.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from jugadores j1_0 left join partidas pej1_0 on pej1_0.IdPartida=j1_0.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida left join (accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario) on j1_0.IdPlayer=ica1_0.IdPlayer where j1_0.IdPlayer=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+Hibernate: select j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from jugadores j1_0 where j1_0.partidaEnJugador=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from jugadores j1_0 where j1_0.partidaEnJugador=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+Hibernate: insert into inventarios (SlotsMaximos,SlotsOcupados,IdInventario) values (?,?,?)
+]]></system-out>
+  </testcase>
+  <testcase name="testCrearInventario_3" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.057">
+    <system-out><![CDATA[Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+Hibernate: select j1_0.IdPlayer,j1_0.NickName,j1_0.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from jugadores j1_0 left join partidas pej1_0 on pej1_0.IdPartida=j1_0.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida left join (accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario) on j1_0.IdPlayer=ica1_0.IdPlayer where j1_0.IdPlayer=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+Hibernate: select j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from jugadores j1_0 where j1_0.partidaEnJugador=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from jugadores j1_0 where j1_0.partidaEnJugador=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+Hibernate: insert into inventarios (SlotsMaximos,SlotsOcupados,IdInventario) values (?,?,?)
+]]></system-out>
+  </testcase>
+  <testcase name="testCrearInventario_4" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.001"/>
+  <testcase name="testCrearInventario_5" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.001"/>
+  <testcase name="testLectura" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.002"/>
+  <testcase name="testEliminarJugador_1" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.055">
+    <system-out><![CDATA[Hibernate: select j1_0.IdPlayer,j1_0.NickName,j1_0.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from jugadores j1_0 left join partidas pej1_0 on pej1_0.IdPartida=j1_0.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida left join (accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario) on j1_0.IdPlayer=ica1_0.IdPlayer where j1_0.IdPlayer=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+Hibernate: select j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from jugadores j1_0 where j1_0.partidaEnJugador=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from jugadores j1_0 where j1_0.partidaEnJugador=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+]]></system-out>
+  </testcase>
+  <testcase name="testEliminarJugador_2" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.034">
+    <system-out><![CDATA[Hibernate: select null,j1_0.NickName,j1_0.nivel,j1_0.partidaEnJugador from jugadores j1_0 where j1_0.IdPlayer=?
+Hibernate: delete from accesos where IdPlayer=?
+Hibernate: delete from jugadores where IdPlayer=?
+Hibernate: select j1_0.IdPlayer,j1_0.NickName,j1_0.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from jugadores j1_0 left join partidas pej1_0 on pej1_0.IdPartida=j1_0.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida left join (accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario) on j1_0.IdPlayer=ica1_0.IdPlayer where j1_0.IdPlayer=?
+]]></system-out>
+  </testcase>
+  <testcase name="testEliminarInventario_1" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.021">
+    <system-out><![CDATA[Hibernate: select null,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados from inventarios ic1_0 where ic1_0.IdInventario=?
+Hibernate: delete from inventarios where IdInventario=?
+Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+]]></system-out>
+  </testcase>
+  <testcase name="testEliminarInventario_2" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.012">
+    <system-out><![CDATA[Hibernate: select ic1_0.IdInventario,ic1_0.SlotsMaximos,ic1_0.SlotsOcupados,jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,pej1_0.ServerPartida from inventarios ic1_0 left join (accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer) on ic1_0.IdInventario=jai1_0.IdInventario left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador where ic1_0.IdInventario=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+]]></system-out>
+  </testcase>
+  <testcase name="testModificarPartida_1" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.016">
+    <system-out><![CDATA[Hibernate: select p1_0.IdPartida,p1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from partidas p1_0 left join servidores sp1_0 on sp1_0.IdServer=p1_0.ServerPartida left join jugadores j1_0 on p1_0.IdPartida=j1_0.partidaEnJugador where p1_0.IdPartida=?
+Hibernate: select p1_0.IdPartida,p1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from partidas p1_0 left join servidores sp1_0 on sp1_0.IdServer=p1_0.ServerPartida left join jugadores j1_0 on p1_0.IdPartida=j1_0.partidaEnJugador where p1_0.IdPartida=?
+]]></system-out>
+  </testcase>
+  <testcase name="testModificarPartida_2" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.039">
+    <system-out><![CDATA[Hibernate: select p1_0.IdPartida,p1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from partidas p1_0 left join servidores sp1_0 on sp1_0.IdServer=p1_0.ServerPartida left join jugadores j1_0 on p1_0.IdPartida=j1_0.partidaEnJugador where p1_0.IdPartida=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select jai1_0.IdInventario,jai1_1.IdPlayer,jai1_1.NickName,jai1_1.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region from accesos jai1_0 join jugadores jai1_1 on jai1_1.IdPlayer=jai1_0.IdPlayer left join partidas pej1_0 on pej1_0.IdPartida=jai1_1.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida where jai1_0.IdInventario=?
+Hibernate: select s1_0.IdServer,s1_0.region from servidores s1_0 where s1_0.IdServer=?
+Hibernate: update jugadores set NickName=?,nivel=?,partidaEnJugador=? where IdPlayer=?
+Hibernate: update partidas set NumEspectadores=?,ServerPartida=? where IdPartida=?
+Hibernate: select p1_0.IdPartida,p1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from partidas p1_0 left join servidores sp1_0 on sp1_0.IdServer=p1_0.ServerPartida left join jugadores j1_0 on p1_0.IdPartida=j1_0.partidaEnJugador where p1_0.IdPartida=?
+]]></system-out>
+  </testcase>
+  <testcase name="testModificarPartida_3" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.052">
+    <system-out><![CDATA[Hibernate: select p1_0.IdPartida,p1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from partidas p1_0 left join servidores sp1_0 on sp1_0.IdServer=p1_0.ServerPartida left join jugadores j1_0 on p1_0.IdPartida=j1_0.partidaEnJugador where p1_0.IdPartida=?
+Hibernate: select j1_0.IdPlayer,j1_0.NickName,j1_0.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from jugadores j1_0 left join partidas pej1_0 on pej1_0.IdPartida=j1_0.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida left join (accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario) on j1_0.IdPlayer=ica1_0.IdPlayer where j1_0.IdPlayer=?
+Hibernate: select j1_0.IdPlayer,j1_0.NickName,j1_0.nivel,pej1_0.IdPartida,pej1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from jugadores j1_0 left join partidas pej1_0 on pej1_0.IdPartida=j1_0.partidaEnJugador left join servidores sp1_0 on sp1_0.IdServer=pej1_0.ServerPartida left join (accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario) on j1_0.IdPlayer=ica1_0.IdPlayer where j1_0.IdPlayer=?
+Hibernate: update jugadores set NickName=?,nivel=?,partidaEnJugador=? where IdPlayer=?
+Hibernate: update jugadores set NickName=?,nivel=?,partidaEnJugador=? where IdPlayer=?
+Hibernate: select p1_0.IdPartida,p1_0.NumEspectadores,sp1_0.IdServer,sp1_0.region,j1_0.partidaEnJugador,j1_0.IdPlayer,j1_0.NickName,j1_0.nivel from partidas p1_0 left join servidores sp1_0 on sp1_0.IdServer=p1_0.ServerPartida left join jugadores j1_0 on p1_0.IdPartida=j1_0.partidaEnJugador where p1_0.IdPartida=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+Hibernate: select ica1_0.IdPlayer,ica1_1.IdInventario,ica1_1.SlotsMaximos,ica1_1.SlotsOcupados from accesos ica1_0 join inventarios ica1_1 on ica1_1.IdInventario=ica1_0.IdInventario where ica1_0.IdPlayer=?
+]]></system-out>
+  </testcase>
+  <testcase name="testModificarPartida_4" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.002"/>
+  <testcase name="testModificarPartida_5" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.003"/>
+  <testcase name="testModificarPartida_6" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.003"/>
+  <testcase name="testModificarPartida_7" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.003"/>
+  <testcase name="testModificarPartida_8" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.003"/>
+  <testcase name="testEliminarServidor_1" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.02">
+    <system-out><![CDATA[Hibernate: select s1_0.IdServer,s1_0.region from servidores s1_0 where s1_0.IdServer=?
+Hibernate: delete from servidores where IdServer=?
+Hibernate: select s1_0.IdServer,s1_0.region from servidores s1_0 where s1_0.IdServer=?
+]]></system-out>
+  </testcase>
+  <testcase name="testEliminarServidor_2" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.008">
+    <system-out><![CDATA[Hibernate: select s1_0.IdServer,s1_0.region from servidores s1_0 where s1_0.IdServer=?
+]]></system-out>
+  </testcase>
+  <testcase name="testModificarServidor_1" classname="com.mycompany.proyecto_ad_hibernate.controller.ControllerTest" time="0.016">
+    <system-out><![CDATA[Hibernate: select s1_0.IdServer,s1_0.region from servidores s1_0 where s1_0.IdServer=?
+Hibernate: update servidores set region=? where IdServer=?
+Hibernate: select s1_0.IdServer,s1_0.region from servidores s1_0 where s1_0.IdServer=?
+]]></system-out>
+  </testcase>
+</testsuite>

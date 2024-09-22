@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>perfiles</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md bg-primary navbar-primary">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">perfil Management System</a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" th:href="@{/perfiles}">perfil Management</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <br>
+      <br>
+          <div class = "container">
+              <div class = "row">
+                  <div class ="col-lg-6 col-md-6 col-sm-6 container justify-content-center card", style="width: 80%;">
+                      <h1 class = "text-center"> Update perfil </h1>
+                      <div class = "card-body">
+                              
+                        <!-- tabla playLists del perfil -->
+                        <table class = "table table-striped table-bordered">
+                            <thead class = "table-primary">
+                                <tr>
+                                    <th> Nombre PlayList </th>
+                                    <th> Num Canciones </th>
+                                    <th> Id Creador </th>
+                                    <th> Actions </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr th:each = "playList : ${perfil.playLists}">
+                                    <td th:text = "${playList.nombrePlayList}"></td>
+                                    <td th:text = "${playList.numCanciones}"></td>
+                                    <td th:text = "${playList.idCreador}"></td>
+
+                                    <td>
+                                        <!-- boton quitar playLists -->
+                                        <a th:href = "@{/perfiles/admin/remove/{id_perfil}/{id_playList} ((id_perfil=${perfil.id_perfil}), (id_playList=${playList.id_playList}))}"
+                                            class = "btn btn-danger">Quitar</a>
+
+
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                            <!-- boton-desplegable añadir playLists -->
+                            <form th:action="@{/perfiles/admin/addPlayList/{id_perfil}(id_perfil=${perfil.id_perfil})}" method="POST">
+                                <select name="id_playList" required>
+                                    <option th:each="playList : ${playListsRestantes}" th:value="${playList.id_playList}" th:text="${playList.nombrePlayList}"></option>
+                                </select>
+                                <button type="submit" class="btn btn-primary">Agregar Play List</button>
+                            </form>
+                          
+                        
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
+
+</body>
+</html>

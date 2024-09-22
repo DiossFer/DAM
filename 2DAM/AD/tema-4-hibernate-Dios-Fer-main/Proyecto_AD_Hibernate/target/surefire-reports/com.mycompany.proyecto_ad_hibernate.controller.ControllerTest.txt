@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.proyecto_ad_hibernate.controller.ControllerTest
+-------------------------------------------------------------------------------
+Tests run: 43, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.956 s - in com.mycompany.proyecto_ad_hibernate.controller.ControllerTest
