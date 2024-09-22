@@ -1,0 +1,10 @@
+C:\Users\DiosFer\source\repos\Ahorcado\Ahorcado\bin\Debug\Ahorcado.exe.config
+C:\Users\DiosFer\source\repos\Ahorcado\Ahorcado\bin\Debug\Ahorcado.exe
+C:\Users\DiosFer\source\repos\Ahorcado\Ahorcado\bin\Debug\Ahorcado.pdb
+C:\Users\DiosFer\source\repos\Ahorcado\Ahorcado\obj\Debug\Ahorcado.csproj.AssemblyReference.cache
+C:\Users\DiosFer\source\repos\Ahorcado\Ahorcado\obj\Debug\Ahorcado.Form1.resources
+C:\Users\DiosFer\source\repos\Ahorcado\Ahorcado\obj\Debug\Ahorcado.Properties.Resources.resources
+C:\Users\DiosFer\source\repos\Ahorcado\Ahorcado\obj\Debug\Ahorcado.csproj.GenerateResource.cache
+C:\Users\DiosFer\source\repos\Ahorcado\Ahorcado\obj\Debug\Ahorcado.csproj.CoreCompileInputs.cache
+C:\Users\DiosFer\source\repos\Ahorcado\Ahorcado\obj\Debug\Ahorcado.exe
+C:\Users\DiosFer\source\repos\Ahorcado\Ahorcado\obj\Debug\Ahorcado.pdb
