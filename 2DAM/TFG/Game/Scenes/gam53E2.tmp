@@ -1,0 +1,796 @@
+[gd_scene load_steps=4 format=3 uid="uid://nhw1osru862s"]
+
+[ext_resource type="Script" path="res://Game.gd" id="1_43eeh"]
+[ext_resource type="PackedScene" uid="uid://bm0i5pnrue2pc" path="res://Scenes/casilla.tscn" id="2_q4wer"]
+[ext_resource type="PackedScene" uid="uid://b6vvfmxwbuuyf" path="res://Scenes/ficha.tscn" id="3_4tipp"]
+
+[node name="Game" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+script = ExtResource("1_43eeh")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.152941, 0.427451, 0.6, 1)
+
+[node name="Tablero" type="VBoxContainer" parent="Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 363.0
+offset_right = -478.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Fila8" type="HBoxContainer" parent="Background/Tablero"]
+custom_minimum_size = Vector2(0, 131)
+layout_mode = 2
+
+[node name="Casilla8A" parent="Background/Tablero/Fila8" instance=ExtResource("2_q4wer")]
+
+[node name="ButtonCasilla8A" type="Button" parent="Background/Tablero/Fila8/Casilla8A"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha8A" parent="Background/Tablero/Fila8/Casilla8A" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla8B" parent="Background/Tablero/Fila8" instance=ExtResource("2_q4wer")]
+position = Vector2(135, 0)
+
+[node name="ButtonCasilla8B" type="Button" parent="Background/Tablero/Fila8/Casilla8B"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha8B" parent="Background/Tablero/Fila8/Casilla8B" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla8C" parent="Background/Tablero/Fila8" instance=ExtResource("2_q4wer")]
+position = Vector2(270, 0)
+
+[node name="ButtonCasilla8C" type="Button" parent="Background/Tablero/Fila8/Casilla8C"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha8C" parent="Background/Tablero/Fila8/Casilla8C" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla8D" parent="Background/Tablero/Fila8" instance=ExtResource("2_q4wer")]
+position = Vector2(405, 0)
+
+[node name="ButtonCasilla8D" type="Button" parent="Background/Tablero/Fila8/Casilla8D"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha8D" parent="Background/Tablero/Fila8/Casilla8D" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla8E" parent="Background/Tablero/Fila8" instance=ExtResource("2_q4wer")]
+position = Vector2(540, 0)
+
+[node name="ButtonCasilla8E" type="Button" parent="Background/Tablero/Fila8/Casilla8E"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha8E" parent="Background/Tablero/Fila8/Casilla8E" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla8F" parent="Background/Tablero/Fila8" instance=ExtResource("2_q4wer")]
+position = Vector2(675, 0)
+
+[node name="ButtonCasilla8F" type="Button" parent="Background/Tablero/Fila8/Casilla8F"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha8F" parent="Background/Tablero/Fila8/Casilla8F" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla8G" parent="Background/Tablero/Fila8" instance=ExtResource("2_q4wer")]
+position = Vector2(810, 0)
+
+[node name="ButtonCasilla8G" type="Button" parent="Background/Tablero/Fila8/Casilla8G"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha8G" parent="Background/Tablero/Fila8/Casilla8G" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla8H" parent="Background/Tablero/Fila8" instance=ExtResource("2_q4wer")]
+position = Vector2(945, 0)
+
+[node name="ButtonCasilla8H" type="Button" parent="Background/Tablero/Fila8/Casilla8H"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha8H" parent="Background/Tablero/Fila8/Casilla8H" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Fila7" type="HBoxContainer" parent="Background/Tablero"]
+custom_minimum_size = Vector2(0, 131)
+layout_mode = 2
+
+[node name="Casilla7A" parent="Background/Tablero/Fila7" instance=ExtResource("2_q4wer")]
+
+[node name="ButtonCasilla7A" type="Button" parent="Background/Tablero/Fila7/Casilla7A"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha7A" parent="Background/Tablero/Fila7/Casilla7A" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla7B" parent="Background/Tablero/Fila7" instance=ExtResource("2_q4wer")]
+position = Vector2(135, 0)
+
+[node name="ButtonCasilla7B" type="Button" parent="Background/Tablero/Fila7/Casilla7B"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha7B" parent="Background/Tablero/Fila7/Casilla7B" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla7C" parent="Background/Tablero/Fila7" instance=ExtResource("2_q4wer")]
+position = Vector2(270, 0)
+
+[node name="ButtonCasilla7C" type="Button" parent="Background/Tablero/Fila7/Casilla7C"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha7C" parent="Background/Tablero/Fila7/Casilla7C" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla7D" parent="Background/Tablero/Fila7" instance=ExtResource("2_q4wer")]
+position = Vector2(405, 0)
+
+[node name="ButtonCasilla7D" type="Button" parent="Background/Tablero/Fila7/Casilla7D"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha7D" parent="Background/Tablero/Fila7/Casilla7D" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla7E" parent="Background/Tablero/Fila7" instance=ExtResource("2_q4wer")]
+position = Vector2(540, 0)
+
+[node name="ButtonCasilla7E" type="Button" parent="Background/Tablero/Fila7/Casilla7E"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha7E" parent="Background/Tablero/Fila7/Casilla7E" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla7F" parent="Background/Tablero/Fila7" instance=ExtResource("2_q4wer")]
+position = Vector2(675, 0)
+
+[node name="ButtonCasilla7F" type="Button" parent="Background/Tablero/Fila7/Casilla7F"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha7F" parent="Background/Tablero/Fila7/Casilla7F" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla7G" parent="Background/Tablero/Fila7" instance=ExtResource("2_q4wer")]
+position = Vector2(810, 0)
+
+[node name="ButtonCasilla7G" type="Button" parent="Background/Tablero/Fila7/Casilla7G"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha7G" parent="Background/Tablero/Fila7/Casilla7G" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla7H" parent="Background/Tablero/Fila7" instance=ExtResource("2_q4wer")]
+position = Vector2(945, 0)
+
+[node name="ButtonCasilla7H" type="Button" parent="Background/Tablero/Fila7/Casilla7H"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha7H" parent="Background/Tablero/Fila7/Casilla7H" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Fila6" type="HBoxContainer" parent="Background/Tablero"]
+custom_minimum_size = Vector2(0, 131)
+layout_mode = 2
+
+[node name="Casilla6A" parent="Background/Tablero/Fila6" instance=ExtResource("2_q4wer")]
+
+[node name="ButtonCasilla6A" type="Button" parent="Background/Tablero/Fila6/Casilla6A"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla6B" parent="Background/Tablero/Fila6" instance=ExtResource("2_q4wer")]
+position = Vector2(135, 0)
+
+[node name="ButtonCasilla6B" type="Button" parent="Background/Tablero/Fila6/Casilla6B"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla6C" parent="Background/Tablero/Fila6" instance=ExtResource("2_q4wer")]
+position = Vector2(270, 0)
+
+[node name="ButtonCasilla6C" type="Button" parent="Background/Tablero/Fila6/Casilla6C"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla6D" parent="Background/Tablero/Fila6" instance=ExtResource("2_q4wer")]
+position = Vector2(405, 0)
+
+[node name="ButtonCasilla6D" type="Button" parent="Background/Tablero/Fila6/Casilla6D"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla6E" parent="Background/Tablero/Fila6" instance=ExtResource("2_q4wer")]
+position = Vector2(540, 0)
+
+[node name="ButtonCasilla6E" type="Button" parent="Background/Tablero/Fila6/Casilla6E"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla6F" parent="Background/Tablero/Fila6" instance=ExtResource("2_q4wer")]
+position = Vector2(675, 0)
+
+[node name="ButtonCasilla6F" type="Button" parent="Background/Tablero/Fila6/Casilla6F"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla6G" parent="Background/Tablero/Fila6" instance=ExtResource("2_q4wer")]
+position = Vector2(810, 0)
+
+[node name="ButtonCasilla6G" type="Button" parent="Background/Tablero/Fila6/Casilla6G"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla6H" parent="Background/Tablero/Fila6" instance=ExtResource("2_q4wer")]
+position = Vector2(945, 0)
+
+[node name="ButtonCasilla6H" type="Button" parent="Background/Tablero/Fila6/Casilla6H"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Fila5" type="HBoxContainer" parent="Background/Tablero"]
+custom_minimum_size = Vector2(0, 131)
+layout_mode = 2
+
+[node name="Casilla5A" parent="Background/Tablero/Fila5" instance=ExtResource("2_q4wer")]
+
+[node name="ButtonCasilla5A" type="Button" parent="Background/Tablero/Fila5/Casilla5A"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla5B" parent="Background/Tablero/Fila5" instance=ExtResource("2_q4wer")]
+position = Vector2(135, 0)
+
+[node name="ButtonCasilla5B" type="Button" parent="Background/Tablero/Fila5/Casilla5B"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla5C" parent="Background/Tablero/Fila5" instance=ExtResource("2_q4wer")]
+position = Vector2(270, 0)
+
+[node name="ButtonCasilla5C" type="Button" parent="Background/Tablero/Fila5/Casilla5C"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla5D" parent="Background/Tablero/Fila5" instance=ExtResource("2_q4wer")]
+position = Vector2(405, 0)
+
+[node name="ButtonCasilla5D" type="Button" parent="Background/Tablero/Fila5/Casilla5D"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla5E" parent="Background/Tablero/Fila5" instance=ExtResource("2_q4wer")]
+position = Vector2(540, 0)
+
+[node name="ButtonCasilla5E" type="Button" parent="Background/Tablero/Fila5/Casilla5E"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla5F" parent="Background/Tablero/Fila5" instance=ExtResource("2_q4wer")]
+position = Vector2(675, 0)
+
+[node name="ButtonCasilla5F" type="Button" parent="Background/Tablero/Fila5/Casilla5F"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla5G" parent="Background/Tablero/Fila5" instance=ExtResource("2_q4wer")]
+position = Vector2(810, 0)
+
+[node name="ButtonCasilla5G" type="Button" parent="Background/Tablero/Fila5/Casilla5G"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla5H" parent="Background/Tablero/Fila5" instance=ExtResource("2_q4wer")]
+position = Vector2(945, 0)
+
+[node name="ButtonCasilla5H" type="Button" parent="Background/Tablero/Fila5/Casilla5H"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Fila4" type="HBoxContainer" parent="Background/Tablero"]
+custom_minimum_size = Vector2(0, 131)
+layout_mode = 2
+
+[node name="Casilla4A" parent="Background/Tablero/Fila4" instance=ExtResource("2_q4wer")]
+
+[node name="ButtonCasilla4A" type="Button" parent="Background/Tablero/Fila4/Casilla4A"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla4B" parent="Background/Tablero/Fila4" instance=ExtResource("2_q4wer")]
+position = Vector2(135, 0)
+
+[node name="ButtonCasilla4B" type="Button" parent="Background/Tablero/Fila4/Casilla4B"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla4C" parent="Background/Tablero/Fila4" instance=ExtResource("2_q4wer")]
+position = Vector2(270, 0)
+
+[node name="ButtonCasilla4C" type="Button" parent="Background/Tablero/Fila4/Casilla4C"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla4D" parent="Background/Tablero/Fila4" instance=ExtResource("2_q4wer")]
+position = Vector2(405, 0)
+
+[node name="ButtonCasilla4D" type="Button" parent="Background/Tablero/Fila4/Casilla4D"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla4E" parent="Background/Tablero/Fila4" instance=ExtResource("2_q4wer")]
+position = Vector2(540, 0)
+
+[node name="ButtonCasilla4E" type="Button" parent="Background/Tablero/Fila4/Casilla4E"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla4F" parent="Background/Tablero/Fila4" instance=ExtResource("2_q4wer")]
+position = Vector2(675, 0)
+
+[node name="ButtonCasilla4F" type="Button" parent="Background/Tablero/Fila4/Casilla4F"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla4G" parent="Background/Tablero/Fila4" instance=ExtResource("2_q4wer")]
+position = Vector2(810, 0)
+
+[node name="ButtonCasilla4G" type="Button" parent="Background/Tablero/Fila4/Casilla4G"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla4H" parent="Background/Tablero/Fila4" instance=ExtResource("2_q4wer")]
+position = Vector2(945, 0)
+
+[node name="ButtonCasilla4H" type="Button" parent="Background/Tablero/Fila4/Casilla4H"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Fila3" type="HBoxContainer" parent="Background/Tablero"]
+custom_minimum_size = Vector2(0, 131)
+layout_mode = 2
+
+[node name="Casilla3A" parent="Background/Tablero/Fila3" instance=ExtResource("2_q4wer")]
+
+[node name="ButtonCasilla3A" type="Button" parent="Background/Tablero/Fila3/Casilla3A"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla3B" parent="Background/Tablero/Fila3" instance=ExtResource("2_q4wer")]
+position = Vector2(135, 0)
+
+[node name="ButtonCasilla3B" type="Button" parent="Background/Tablero/Fila3/Casilla3B"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla3C" parent="Background/Tablero/Fila3" instance=ExtResource("2_q4wer")]
+position = Vector2(270, 0)
+
+[node name="ButtonCasilla3C" type="Button" parent="Background/Tablero/Fila3/Casilla3C"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla3D" parent="Background/Tablero/Fila3" instance=ExtResource("2_q4wer")]
+position = Vector2(405, 0)
+
+[node name="ButtonCasilla3D" type="Button" parent="Background/Tablero/Fila3/Casilla3D"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla3E" parent="Background/Tablero/Fila3" instance=ExtResource("2_q4wer")]
+position = Vector2(540, 0)
+
+[node name="ButtonCasilla3E" type="Button" parent="Background/Tablero/Fila3/Casilla3E"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla3F" parent="Background/Tablero/Fila3" instance=ExtResource("2_q4wer")]
+position = Vector2(675, 0)
+
+[node name="ButtonCasilla3F" type="Button" parent="Background/Tablero/Fila3/Casilla3F"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla3G" parent="Background/Tablero/Fila3" instance=ExtResource("2_q4wer")]
+position = Vector2(810, 0)
+
+[node name="ButtonCasilla3G" type="Button" parent="Background/Tablero/Fila3/Casilla3G"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Casilla3H" parent="Background/Tablero/Fila3" instance=ExtResource("2_q4wer")]
+position = Vector2(945, 0)
+
+[node name="ButtonCasilla3H" type="Button" parent="Background/Tablero/Fila3/Casilla3H"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Fila2" type="HBoxContainer" parent="Background/Tablero"]
+custom_minimum_size = Vector2(0, 131)
+layout_mode = 2
+
+[node name="Casilla2A" parent="Background/Tablero/Fila2" instance=ExtResource("2_q4wer")]
+
+[node name="ButtonCasilla2A" type="Button" parent="Background/Tablero/Fila2/Casilla2A"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha2A" parent="Background/Tablero/Fila2/Casilla2A" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla2B" parent="Background/Tablero/Fila2" instance=ExtResource("2_q4wer")]
+position = Vector2(135, 0)
+
+[node name="ButtonCasilla2B" type="Button" parent="Background/Tablero/Fila2/Casilla2B"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha2B" parent="Background/Tablero/Fila2/Casilla2B" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla2C" parent="Background/Tablero/Fila2" instance=ExtResource("2_q4wer")]
+position = Vector2(270, 0)
+
+[node name="ButtonCasilla2C" type="Button" parent="Background/Tablero/Fila2/Casilla2C"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha2C" parent="Background/Tablero/Fila2/Casilla2C" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla2D" parent="Background/Tablero/Fila2" instance=ExtResource("2_q4wer")]
+position = Vector2(405, 0)
+
+[node name="ButtonCasilla2D" type="Button" parent="Background/Tablero/Fila2/Casilla2D"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha2D" parent="Background/Tablero/Fila2/Casilla2D" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla2E" parent="Background/Tablero/Fila2" instance=ExtResource("2_q4wer")]
+position = Vector2(540, 0)
+
+[node name="ButtonCasilla2E" type="Button" parent="Background/Tablero/Fila2/Casilla2E"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha2E" parent="Background/Tablero/Fila2/Casilla2E" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla2F" parent="Background/Tablero/Fila2" instance=ExtResource("2_q4wer")]
+position = Vector2(675, 0)
+
+[node name="ButtonCasilla2F" type="Button" parent="Background/Tablero/Fila2/Casilla2F"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha2F" parent="Background/Tablero/Fila2/Casilla2F" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla2G" parent="Background/Tablero/Fila2" instance=ExtResource("2_q4wer")]
+position = Vector2(810, 0)
+
+[node name="ButtonCasilla2G" type="Button" parent="Background/Tablero/Fila2/Casilla2G"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha2G" parent="Background/Tablero/Fila2/Casilla2G" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla2H" parent="Background/Tablero/Fila2" instance=ExtResource("2_q4wer")]
+position = Vector2(945, 0)
+
+[node name="ButtonCasilla2H" type="Button" parent="Background/Tablero/Fila2/Casilla2H"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha2H" parent="Background/Tablero/Fila2/Casilla2H" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Fila1" type="HBoxContainer" parent="Background/Tablero"]
+custom_minimum_size = Vector2(0, 131)
+layout_mode = 2
+
+[node name="Casilla1A" parent="Background/Tablero/Fila1" instance=ExtResource("2_q4wer")]
+
+[node name="ButtonCasilla1A" type="Button" parent="Background/Tablero/Fila1/Casilla1A"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha1A" parent="Background/Tablero/Fila1/Casilla1A" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla1B" parent="Background/Tablero/Fila1" instance=ExtResource("2_q4wer")]
+position = Vector2(135, 0)
+
+[node name="ButtonCasilla1B" type="Button" parent="Background/Tablero/Fila1/Casilla1B"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha1B" parent="Background/Tablero/Fila1/Casilla1B" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla1C" parent="Background/Tablero/Fila1" instance=ExtResource("2_q4wer")]
+position = Vector2(270, 0)
+
+[node name="ButtonCasilla1C" type="Button" parent="Background/Tablero/Fila1/Casilla1C"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha1C" parent="Background/Tablero/Fila1/Casilla1C" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla1D" parent="Background/Tablero/Fila1" instance=ExtResource("2_q4wer")]
+position = Vector2(405, 0)
+
+[node name="ButtonCasilla1D" type="Button" parent="Background/Tablero/Fila1/Casilla1D"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha1D" parent="Background/Tablero/Fila1/Casilla1D" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla1E" parent="Background/Tablero/Fila1" instance=ExtResource("2_q4wer")]
+position = Vector2(540, 0)
+
+[node name="ButtonCasilla1E" type="Button" parent="Background/Tablero/Fila1/Casilla1E"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha1E" parent="Background/Tablero/Fila1/Casilla1E" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla1F" parent="Background/Tablero/Fila1" instance=ExtResource("2_q4wer")]
+position = Vector2(675, 0)
+
+[node name="ButtonCasilla1F" type="Button" parent="Background/Tablero/Fila1/Casilla1F"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha1F" parent="Background/Tablero/Fila1/Casilla1F" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla1G" parent="Background/Tablero/Fila1" instance=ExtResource("2_q4wer")]
+position = Vector2(810, 0)
+
+[node name="ButtonCasilla1G" type="Button" parent="Background/Tablero/Fila1/Casilla1G"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha1G" parent="Background/Tablero/Fila1/Casilla1G" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[node name="Casilla1H" parent="Background/Tablero/Fila1" instance=ExtResource("2_q4wer")]
+position = Vector2(945, 0)
+
+[node name="ButtonCasilla1H" type="Button" parent="Background/Tablero/Fila1/Casilla1H"]
+offset_right = 135.0
+offset_bottom = 135.0
+size_flags_horizontal = 4
+flat = true
+
+[node name="Ficha1H" parent="Background/Tablero/Fila1/Casilla1H" instance=ExtResource("3_4tipp")]
+position = Vector2(0, -1)
+
+[connection signal="pressed" from="Background/Tablero/Fila8/Casilla8A/ButtonCasilla8A" to="." method="_on_button_casilla_8a_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila8/Casilla8B/ButtonCasilla8B" to="." method="_on_button_casilla_8b_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila8/Casilla8C/ButtonCasilla8C" to="." method="_on_button_casilla_8c_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila8/Casilla8D/ButtonCasilla8D" to="." method="_on_button_casilla_8d_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila8/Casilla8E/ButtonCasilla8E" to="." method="_on_button_casilla_8e_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila8/Casilla8F/ButtonCasilla8F" to="." method="_on_button_casilla_8f_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila8/Casilla8G/ButtonCasilla8G" to="." method="_on_button_casilla_8g_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila8/Casilla8H/ButtonCasilla8H" to="." method="_on_button_casilla_8h_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila7/Casilla7A/ButtonCasilla7A" to="." method="_on_button_casilla_7a_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila7/Casilla7B/ButtonCasilla7B" to="." method="_on_button_casilla_7b_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila7/Casilla7C/ButtonCasilla7C" to="." method="_on_button_casilla_7c_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila7/Casilla7D/ButtonCasilla7D" to="." method="_on_button_casilla_7d_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila7/Casilla7E/ButtonCasilla7E" to="." method="_on_button_casilla_7e_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila7/Casilla7F/ButtonCasilla7F" to="." method="_on_button_casilla_7f_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila7/Casilla7G/ButtonCasilla7G" to="." method="_on_button_casilla_7g_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila7/Casilla7H/ButtonCasilla7H" to="." method="_on_button_casilla_7h_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila6/Casilla6A/ButtonCasilla6A" to="." method="_on_button_casilla_6a_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila6/Casilla6B/ButtonCasilla6B" to="." method="_on_button_casilla_6b_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila6/Casilla6C/ButtonCasilla6C" to="." method="_on_button_casilla_6c_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila6/Casilla6D/ButtonCasilla6D" to="." method="_on_button_casilla_6d_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila6/Casilla6E/ButtonCasilla6E" to="." method="_on_button_casilla_6e_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila6/Casilla6F/ButtonCasilla6F" to="." method="_on_button_casilla_6f_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila6/Casilla6G/ButtonCasilla6G" to="." method="_on_button_casilla_6g_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila6/Casilla6H/ButtonCasilla6H" to="." method="_on_button_casilla_6h_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila5/Casilla5A/ButtonCasilla5A" to="." method="_on_button_casilla_5a_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila5/Casilla5B/ButtonCasilla5B" to="." method="_on_button_casilla_5b_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila5/Casilla5C/ButtonCasilla5C" to="." method="_on_button_casilla_5c_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila5/Casilla5D/ButtonCasilla5D" to="." method="_on_button_casilla_5d_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila5/Casilla5E/ButtonCasilla5E" to="." method="_on_button_casilla_5e_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila5/Casilla5F/ButtonCasilla5F" to="." method="_on_button_casilla_5f_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila5/Casilla5G/ButtonCasilla5G" to="." method="_on_button_casilla_5g_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila5/Casilla5H/ButtonCasilla5H" to="." method="_on_button_casilla_5h_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila4/Casilla4A/ButtonCasilla4A" to="." method="_on_button_casilla_4a_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila4/Casilla4B/ButtonCasilla4B" to="." method="_on_button_casilla_4b_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila4/Casilla4C/ButtonCasilla4C" to="." method="_on_button_casilla_4c_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila4/Casilla4D/ButtonCasilla4D" to="." method="_on_button_casilla_4d_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila4/Casilla4E/ButtonCasilla4E" to="." method="_on_button_casilla_4e_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila4/Casilla4F/ButtonCasilla4F" to="." method="_on_button_casilla_4f_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila4/Casilla4G/ButtonCasilla4G" to="." method="_on_button_casilla_4g_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila4/Casilla4H/ButtonCasilla4H" to="." method="_on_button_casilla_4h_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila3/Casilla3A/ButtonCasilla3A" to="." method="_on_button_casilla_3a_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila3/Casilla3B/ButtonCasilla3B" to="." method="_on_button_casilla_3b_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila3/Casilla3C/ButtonCasilla3C" to="." method="_on_button_casilla_3c_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila3/Casilla3D/ButtonCasilla3D" to="." method="_on_button_casilla_3d_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila3/Casilla3E/ButtonCasilla3E" to="." method="_on_button_casilla_3e_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila3/Casilla3F/ButtonCasilla3F" to="." method="_on_button_casilla_3f_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila3/Casilla3G/ButtonCasilla3G" to="." method="_on_button_casilla_3g_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila3/Casilla3H/ButtonCasilla3H" to="." method="_on_button_casilla_3h_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila2/Casilla2A/ButtonCasilla2A" to="." method="_on_button_casilla_2a_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila2/Casilla2B/ButtonCasilla2B" to="." method="_on_button_casilla_2b_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila2/Casilla2C/ButtonCasilla2C" to="." method="_on_button_casilla_2c_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila2/Casilla2D/ButtonCasilla2D" to="." method="_on_button_casilla_2d_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila2/Casilla2E/ButtonCasilla2E" to="." method="_on_button_casilla_2e_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila2/Casilla2F/ButtonCasilla2F" to="." method="_on_button_casilla_2f_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila2/Casilla2G/ButtonCasilla2G" to="." method="_on_button_casilla_2g_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila2/Casilla2H/ButtonCasilla2H" to="." method="_on_button_casilla_2h_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila1/Casilla1A/ButtonCasilla1A" to="." method="_on_button_casilla_1a_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila1/Casilla1B/ButtonCasilla1B" to="." method="_on_button_casilla_1b_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila1/Casilla1C/ButtonCasilla1C" to="." method="_on_button_casilla_1c_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila1/Casilla1D/ButtonCasilla1D" to="." method="_on_button_casilla_1d_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila1/Casilla1E/ButtonCasilla1E" to="." method="_on_button_casilla_1e_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila1/Casilla1F/ButtonCasilla1F" to="." method="_on_button_casilla_1f_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila1/Casilla1G/ButtonCasilla1G" to="." method="_on_button_casilla_1g_pressed"]
+[connection signal="pressed" from="Background/Tablero/Fila1/Casilla1H/ButtonCasilla1H" to="." method="_on_button_casilla_1h_pressed"]

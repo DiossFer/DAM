@@ -1,0 +1,251 @@
+[gd_scene load_steps=17 format=3 uid="uid://c2l6t6ntdycod"]
+
+[ext_resource type="Script" path="res://Scripts/Perfil.gd" id="1_5s5cn"]
+[ext_resource type="PackedScene" uid="uid://drfnqsugnf5r1" path="res://Scenes/parallax_background.tscn" id="2_65ke0"]
+[ext_resource type="Texture2D" uid="uid://mwabbpcdneyi" path="res://Sprites/perfilBase.png" id="2_uxlvo"]
+[ext_resource type="Texture2D" uid="uid://b6t2dwxtie3v5" path="res://Sprites/cerrar.png" id="3_omvb0"]
+[ext_resource type="Texture2D" uid="uid://cbq1y3sc3d4l6" path="res://Sprites/peon1.png" id="3_xilry"]
+[ext_resource type="Texture2D" uid="uid://cliih8piu8ri" path="res://Sprites/alfil1.png" id="4_ltp4e"]
+[ext_resource type="Texture2D" uid="uid://dc2j0dd7m3uq5" path="res://Sprites/torre1.png" id="5_111yi"]
+[ext_resource type="Texture2D" uid="uid://da3l7eg7qb27h" path="res://Sprites/rey1.png" id="6_a6d62"]
+[ext_resource type="Texture2D" uid="uid://cf14ovjkhdjw6" path="res://Sprites/reina1.png" id="7_ejr2o"]
+[ext_resource type="Texture2D" uid="uid://cqc8mlblbpkh3" path="res://Sprites/caballo1.png" id="8_ubyir"]
+[ext_resource type="Texture2D" uid="uid://cq63gv05pk6s8" path="res://Sprites/peon2.png" id="9_r2tqi"]
+[ext_resource type="Texture2D" uid="uid://dporulmabv26m" path="res://Sprites/alfil2.png" id="10_7ksgy"]
+[ext_resource type="Texture2D" uid="uid://cs1xpp5jb0mf2" path="res://Sprites/torre2.png" id="11_y8yu1"]
+[ext_resource type="Texture2D" uid="uid://b0cyd5vpais2e" path="res://Sprites/rey2.png" id="12_ttjcs"]
+[ext_resource type="Texture2D" uid="uid://daxppmi7kn3l1" path="res://Sprites/reina2.png" id="13_5hxo6"]
+[ext_resource type="Texture2D" uid="uid://btpfdnxoyljql" path="res://Sprites/caballo2.png" id="14_dommx"]
+
+[node name="Perfil" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5s5cn")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.152941, 0.427451, 0.6, 0.886275)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 68.0
+grow_horizontal = 2
+
+[node name="Separador1" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="VBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Button" type="Button" parent="VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+icon = ExtResource("2_uxlvo")
+expand_icon = true
+
+[node name="Sprite2D" type="Sprite2D" parent="VBoxContainer/VBoxContainer"]
+visible = false
+scale = Vector2(0.206, 0.2)
+texture = ExtResource("2_uxlvo")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 100, 100)
+
+[node name="UserNameEdit" type="LineEdit" parent="VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+editable = false
+
+[node name="Edit" type="Button" parent="VBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Edit"
+
+[node name="Save" type="Button" parent="VBoxContainer/VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Save"
+
+[node name="Separador2" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="VBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="partidasJugadasTitle" type="Label" parent="VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Partidas Jugadas: "
+
+[node name="partidasJugadas" type="Label" parent="VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "0"
+
+[node name="VBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="partidasGanadasBlancasTitle" type="Label" parent="VBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "Veces ganadas con blancas:"
+
+[node name="partidasGanadasBlancas" type="Label" parent="VBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "0"
+
+[node name="VBoxContainer4" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="partidasGanadasNegrasTitle" type="Label" parent="VBoxContainer/VBoxContainer4"]
+layout_mode = 2
+text = "Veces ganadas con negras:"
+
+[node name="partidasGanadasNegras" type="Label" parent="VBoxContainer/VBoxContainer4"]
+layout_mode = 2
+text = "0"
+
+[node name="Separador3" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="VBoxContainer5" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Button" type="Button" parent="VBoxContainer/VBoxContainer5"]
+layout_mode = 2
+text = "SkinBase
+"
+
+[node name="Button2" type="Button" parent="VBoxContainer/VBoxContainer5"]
+layout_mode = 2
+text = "OtherSkin 
+(InProcess)"
+
+[node name="peon" type="Sprite2D" parent="VBoxContainer/VBoxContainer5"]
+position = Vector2(288, 38)
+scale = Vector2(0.561667, 0.523333)
+texture = ExtResource("3_xilry")
+
+[node name="alfil" type="Sprite2D" parent="VBoxContainer/VBoxContainer5"]
+position = Vector2(398, 33)
+scale = Vector2(0.561667, 0.523333)
+texture = ExtResource("4_ltp4e")
+
+[node name="torre" type="Sprite2D" parent="VBoxContainer/VBoxContainer5"]
+position = Vector2(516, 41)
+scale = Vector2(0.561667, 0.523333)
+texture = ExtResource("5_111yi")
+
+[node name="rey" type="Sprite2D" parent="VBoxContainer/VBoxContainer5"]
+position = Vector2(631, 26)
+scale = Vector2(0.561667, 0.523333)
+texture = ExtResource("6_a6d62")
+
+[node name="reina" type="Sprite2D" parent="VBoxContainer/VBoxContainer5"]
+position = Vector2(773, 23)
+scale = Vector2(0.561667, 0.523333)
+texture = ExtResource("7_ejr2o")
+
+[node name="caballo" type="Sprite2D" parent="VBoxContainer/VBoxContainer5"]
+position = Vector2(908, 39)
+scale = Vector2(0.561667, 0.523333)
+texture = ExtResource("8_ubyir")
+
+[node name="Separador4" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="VBoxContainer6" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Button" type="Button" parent="VBoxContainer/VBoxContainer6"]
+layout_mode = 2
+text = "SkinBase
+"
+
+[node name="Button2" type="Button" parent="VBoxContainer/VBoxContainer6"]
+layout_mode = 2
+text = "OtherSkin 
+(InProcess)"
+
+[node name="peon" type="Sprite2D" parent="VBoxContainer/VBoxContainer6"]
+position = Vector2(288, 38)
+scale = Vector2(0.561667, 0.523333)
+texture = ExtResource("9_r2tqi")
+
+[node name="alfil" type="Sprite2D" parent="VBoxContainer/VBoxContainer6"]
+position = Vector2(397, 27)
+scale = Vector2(0.561667, 0.523333)
+texture = ExtResource("10_7ksgy")
+
+[node name="torre" type="Sprite2D" parent="VBoxContainer/VBoxContainer6"]
+position = Vector2(516, 41)
+scale = Vector2(0.561667, 0.523333)
+texture = ExtResource("11_y8yu1")
+
+[node name="rey" type="Sprite2D" parent="VBoxContainer/VBoxContainer6"]
+position = Vector2(631, 26)
+scale = Vector2(0.561667, 0.523333)
+texture = ExtResource("12_ttjcs")
+
+[node name="reina" type="Sprite2D" parent="VBoxContainer/VBoxContainer6"]
+position = Vector2(773, 23)
+scale = Vector2(0.561667, 0.523333)
+texture = ExtResource("13_5hxo6")
+
+[node name="caballo" type="Sprite2D" parent="VBoxContainer/VBoxContainer6"]
+position = Vector2(908, 39)
+scale = Vector2(0.561667, 0.523333)
+texture = ExtResource("14_dommx")
+
+[node name="Exit" type="Button" parent="."]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -92.0
+offset_right = 1216.0
+offset_bottom = 1308.0
+grow_horizontal = 0
+scale = Vector2(0.07, 0.07)
+size_flags_horizontal = 0
+theme_type_variation = &"FlatButton"
+icon = ExtResource("3_omvb0")
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("2_65ke0")]
+
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/Edit" to="." method="_on_edit_pressed"]
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/Save" to="." method="_on_save_pressed"]
+[connection signal="visibility_changed" from="VBoxContainer/VBoxContainer/Save" to="." method="_on_save_visibility_changed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

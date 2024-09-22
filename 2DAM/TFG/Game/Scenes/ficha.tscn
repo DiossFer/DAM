@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6vvfmxwbuuyf"]
+
+[ext_resource type="Script" path="res://Ficha.gd" id="1_l8vgs"]
+[ext_resource type="Texture2D" uid="uid://cbq1y3sc3d4l6" path="res://Sprites/peon1.png" id="2_o2prt"]
+
+[node name="Ficha" type="Node2D"]
+script = ExtResource("1_l8vgs")
+
+[node name="skinFicha" type="Sprite2D" parent="."]
+position = Vector2(70, 70)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("2_o2prt")
+region_enabled = true
+region_rect = Rect2(3, 1, 297, 299)
